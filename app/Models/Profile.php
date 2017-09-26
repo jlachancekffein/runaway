@@ -133,15 +133,15 @@ class Profile extends Model
     ];
     
     protected static $favoriteAccessories = [
-        'keyHolder',
         'braceletsNecklaces',
-        'scarves',
-        'belts',
-        'handbagsWallets',
-        'sunglasses',
-        'hats',
-        'rings',
         'earrings',
+        'rings',
+        'keyHolder',
+        'handbagsWallets',
+        'scarves',
+        'hats',
+        'sunglasses',
+        'belts',
         'shoes',
     ];
     
