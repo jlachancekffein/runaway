@@ -18,8 +18,7 @@ class Profile extends Model
         'sport-chic',
         'glamour',
         'sportif',
-        'chic-event',
-        'golf',
+        'chic-event'
     ];
 
     protected static $hairColors = [
