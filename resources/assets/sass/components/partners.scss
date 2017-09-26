@@ -1,0 +1,110 @@
+
+.partners {
+    @extend .layout-noPaddingContainer;
+    
+    margin-top: 150px;
+    
+    @media (max-width: $screen-xs-max) {
+        margin-top: 75px;
+    }
+}
+
+.partners-container {
+    @extend .col-md-offset-1;
+    @extend .col-md-10;
+}
+
+.partners-title {
+    @extend .mainTitle;
+    
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 50px;
+    
+    @media (max-width: $screen-md-max) {
+        padding-right: 30px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        padding-right: 15px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        padding-right: 0;
+    }
+}
+
+.partners-text {
+    display: inline-block;
+    vertical-align: middle;
+    // width: 460px;
+    border-left: 1px solid #cdcdcd;
+    margin: 0;
+    padding: 56px 0 37px 50px;
+    font-size: 17px;
+    color: #646464;
+    line-height: 26px;
+    
+    @media (max-width: $screen-md-max) {
+        // width: 310px;
+        padding-left: 30px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        // width: 270px;
+        padding-left: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: 0;
+        margin-top: 20px;
+    }
+}
+
+.partners-partnerList { margin-top: 45px; }
+
+.partners-partner {
+    // height: 74px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    position: relative;
+    // padding: 22px;
+    
+    @media (max-width: $screen-md-max) {
+        margin-right: 25px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        margin-right: 50px;
+    }
+    
+    @media (max-width: 480px) {
+        margin-right: 0;
+        display: block;
+    }
+    
+    // @media (max-width: $screen-md-max) {
+        // padding: 23px;
+    // }
+    
+    // @media (max-width: $screen-sm-max) {
+        // padding: 25px;
+    // }
+    
+    &:last-child { margin-right: 0; }
+    
+    // div { height: 100%; }
+    
+    // img {
+        // height: 100%;
+        // opacity: 0.5;
+    // }
+}

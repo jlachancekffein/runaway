@@ -1,0 +1,78 @@
+
+.expandable { margin-top: 15px; }
+
+.expandable-button {
+    font-size: 19px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1px 0;
+    padding-right: 40px;
+    margin-bottom: 15px;
+    outline: 0;
+    position: relative;
+    overflow: hidden;
+    
+    @media (max-width: $screen-xs-max) {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    &:before,
+    &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 36px;
+        height: 1px;
+        background: $gold;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    
+    &:before {
+        -webkit-transform: rotateZ(45deg) translateX(-18px);
+        transform: rotateZ(45deg) translateX(-18px);
+    }
+    
+    &:after {
+        -webkit-transform: rotateZ(-45deg) translateX(18px);
+        transform: rotateZ(-45deg) translateX(18px);
+    }
+}
+
+.expandable-opened .expandable-button {
+    &:before {
+        top: 12px;
+        -webkit-transform: rotateZ(45deg) translateX(0px);
+        transform: rotateZ(45deg) translateX(0px);
+    }
+    
+    &:after {
+        top: 12px;
+        -webkit-transform: rotateZ(-45deg) translateX(0px);
+        transform: rotateZ(-45deg) translateX(0px);
+    }
+}
+
+.expandable-content {
+    background: #f8f8f7;
+    padding: 0 22px;
+    height: 0;
+    overflow: hidden;
+    
+    p {
+        margin-bottom: 20px;
+        line-height: 20px;
+        
+        &:first-child { margin-top: 18px; }
+        
+        &:last-child { margin-bottom: 24px; }
+    }
+    
+    a { text-decoration: underline; }
+}

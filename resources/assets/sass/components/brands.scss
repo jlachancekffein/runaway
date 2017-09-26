@@ -1,0 +1,87 @@
+
+.brands {
+    @extend .layout-noPaddingContainer;
+    
+    margin-top: 150px;
+    
+    @media (max-width: $screen-xs-max) {
+        margin-top: 75px;
+    }
+}
+
+.brands-container {
+    @extend .col-md-offset-1;
+    @extend .col-md-10;
+}
+
+.brands-title {
+    @extend .mainTitle;
+    
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 50px;
+    
+    @media (max-width: $screen-md-max) {
+        padding-right: 30px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        padding-right: 15px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        padding-right: 0;
+    }
+}
+
+.brands-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 460px;
+    border-left: 1px solid #cdcdcd;
+    margin: 0;
+    padding: 56px 0 37px 50px;
+    font-size: 17px;
+    color: #646464;
+    line-height: 26px;
+    
+    @media (max-width: $screen-md-max) {
+        width: 310px;
+        padding-left: 30px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        width: 270px;
+        padding-left: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: 0;
+        margin-top: 20px;
+    }
+}
+
+.brands-list {
+    width: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 110px;
+    
+    &+.brands-list { margin-top: 0; }
+    
+    @media (max-width: $screen-sm-max) {
+        margin-top: 75px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        margin-top: 30px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}

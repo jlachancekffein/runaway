@@ -1,0 +1,58 @@
+
+.contact {
+    @extend .layout-noPaddingContainer;
+    
+    margin-top: 110px;
+    
+    @media (max-width: $screen-xs-max) {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.contact-title {
+    @extend .col-md-9;
+    @extend .col-md-offset-2;
+    
+    font-size: 35px;
+    color: $gold;
+    line-height: 40px;
+    margin-bottom: 9px;
+    
+    @media (max-width: $screen-xs-max) {
+        font-size: 33px;
+    }
+}
+
+.contact-coordinates {
+    @extend .col-md-4;
+    @extend .col-md-offset-2;
+    @extend .col-sm-6;
+    
+    font-size: 18px;
+    
+    @media (max-width: $screen-xs-max) {
+        margin-bottom: 20px;
+    }
+}
+
+.contact-addressTitle { font-weight: 400; }
+
+.contact-phone {
+    @extend .col-md-5;
+    @extend .col-sm-6;
+}
+
+.contact-phoneText {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 6px;
+}
+
+.contact-phoneNumber {
+    font-size: 43px;
+    line-height: 38px;
+}
+
+.contact-tollFree { color: $gold; }

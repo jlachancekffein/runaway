@@ -1,0 +1,38 @@
+.marker {
+    position: absolute;
+
+    &.marker-active .marker-form {
+        display: block;
+    }
+}
+
+.marker-pin {
+    width: 44px;
+}
+
+.marker-form {
+    display: none;
+    width: 200px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+
+    & > .form-group {
+        margin: 2px 0;
+    }
+}
+
+.marker-details {
+    display: none;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.marker-toggle {
+    cursor: pointer;
+}

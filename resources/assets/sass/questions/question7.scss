@@ -1,0 +1,170 @@
+
+.question-favoriteGroup {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    position: relative;
+    
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+    }
+}
+
+.question-favoriteGroup-left {
+    @extend .question-favoriteGroup;
+    
+    padding-right: 30px;
+    
+    @media (max-width: $screen-xs-max) {
+        padding-right: 0;
+    }
+}
+
+.question-favoriteGroup-right {
+    @extend .question-favoriteGroup;
+    
+    padding-left: 30px;
+    
+    @media (max-width: $screen-xs-max) {
+        padding-left: 0;
+    }
+}
+
+.question-favoriteGroup .question-field {
+    margin-bottom: 33px;
+    
+    &:last-child {
+        margin-bottom: 0;
+        
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 33px;
+        }
+    }
+}
+
+.question-favoriteFieldTitle {
+    @extend .question-fieldTitle;
+    
+    margin-bottom: 20px;
+}
+
+.question-favoriteCheckboxGroup {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.question-favoritePatternsGroup {
+    @extend .question-favoriteCheckboxGroup;
+    
+    width: 33.33%;
+    max-width: 75px;
+    font-size: 13px;
+    line-height: 16px;
+    
+    @media (min-width: 1200px) {
+        width: 20%;
+    }
+}
+
+.question-favoriteAccessoriesGroup {
+    @extend .question-favoriteCheckboxGroup;
+    
+    width: 25%;
+    max-width: 95px;
+}
+
+.question-favoriteInput {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    width: 22px;
+    height: 22px;
+    
+    &:before {
+        content: '';
+        display: none;
+        background: url(/images/checked-with-shadow.png) center center no-repeat;
+        background-size: 54px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &.fakeInput-checked:before {
+        content: ' ';
+        display: block;
+    }
+}
+
+.question-favoriteAccessoriesGroup .question-favoriteInput {
+    &:before {
+        background-image: url(/images/checked-gold.png);
+        background-size: 40px;
+    }
+    
+    &.fakeInput-checked .question-favoriteImage { opacity: 0.2; }
+}
+
+.question-favoriteColorsGroup {
+    @extend .question-favoriteCheckboxGroup;
+    
+    width: 16.66%;
+    padding: 2px;
+    max-width: 65px;
+}
+
+.question-favoritePatternsInput {
+    @extend .question-favoriteInput;
+    
+    width: auto;
+    height: auto;
+    border: 0;
+    margin: 2px;
+}
+
+.question-favoriteAccessoriesInput {
+    @extend .question-favoriteInput;
+    
+    width: auto;
+    height: auto;
+    border: 0;
+    margin: 2px;
+}
+
+.question-favoriteImage { width: 100%; }
+
+.question-favoriteColorsInput {
+    @extend .question-favoriteInput;
+    
+    border: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+    
+    &.fakeInput-checked:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/images/checked-with-shadow.png) 0 0 no-repeat;
+        background-size: 100%;
+        z-index: 1;
+    }
+}
+
+.question-favoriteColorsImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.question-favoriteColorImage-white { box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); }

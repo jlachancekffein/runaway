@@ -1,0 +1,2 @@
+<div class="blog-image"><img src="{{ empty($content['data']['image']) ?: resize($content['data']['image'], 400, null) }}" alt=""></div>{{--
+--}}<div class="blog-text-nextToImage">@markdown($content['data']['text'])</div>

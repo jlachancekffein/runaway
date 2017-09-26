@@ -1,0 +1,35 @@
+.stepsIndicator {
+    counter-reset: step;
+    text-align: center;
+}
+.stepsIndicator-stepNumber {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    counter-increment: step;
+    list-style-type: none;
+    color: #ccc;
+    font-weight: 300;
+}
+.stepsIndicator-stepNumber-active {
+    color: #39f;
+    font-weight: 900;
+}
+.stepsIndicator-stepNumber:before {
+    content: counter(step);
+    display: block;
+    margin: 0 auto 5px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 300;
+}
+.stepsIndicator-stepNumber-active:before {
+    background-color: #39f;
+    color: #fff;
+    font-weight: 900;
+}

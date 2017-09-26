@@ -1,0 +1,9 @@
+.dropdown {
+    .dropdown-menu {
+        & > li {
+            float: none;
+            display: list-item;
+            vertical-align: middle;
+        }
+    }
+}

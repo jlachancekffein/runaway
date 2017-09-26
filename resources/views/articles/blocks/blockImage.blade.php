@@ -1,0 +1,2 @@
+<div class="blog-image"><img src="{{ empty($content['data']['image0']) ?: resize($content['data']['image0'], 400, null) }}" alt=""></div>{{--
+--}}<div class="blog-image"><img src="{{ empty($content['data']['image1']) ?: resize($content['data']['image1'], 400, null) }}" alt=""></div>

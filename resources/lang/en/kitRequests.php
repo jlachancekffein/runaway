@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'title' => 'Request a new look',
+    'intro' => 'To help us, tell us your budget for a box (taxes included)',
+    'nameLabel' => 'Look name',
+    'nameExample' => 'Example: tailors for my job, elegant outfit for my daughter\'s wedding',
+    'budgetLabel' => 'Budget for your box',
+    'commentLabel' => 'Other informations that might help your stylist',
+    'commentExample' => 'Example: I must cover my shoulders, I work in a really cold environment',
+    'commentPlaceholder' => '',
+    '-200' => '200&nbsp;$ or less',
+    '-500' => '500&nbsp;$ or less',
+    '-1000' => '1000&nbsp;$ or less',
+    '-2000' => '2000&nbsp;$ or less',
+    '+2000' => 'more than 2000&nbsp;$',
+    'submitButton' => 'Submit request',
+    // 'successMessage' => '<p>We have successfully received your request for a box.</p><p>You will receive in the next few days an email containing your look. You will have at that moment 2 business days to confirm your purchase.</p>',
+    'successMessage' => '<p>We have successfully received your request.</p><p>Analysis of your profile is underway! We will be in touch with you via email in up to 48 hours to inform you to log on your account and discover what your personal stylist has prepared for you.</p><p><strong>You will have at that moment 2 business days to confirm your purchase.</strong></p><p>Best regards,</p>',
+    'emailSubject' => 'Nouvelle commande pour : :name',
+    'emailTitle' => 'You have received a new look request.',
+    'emailText' => ':name vient de tout juste de demander un nouveau look. Consultez sa demande.',
+    'emailNameField' => 'Name',
+    'emailBudgetField' => 'Budget',
+    'emailCommentField' => 'Comment',
+    'emailButton' => 'Create a look for this client',
+    'confirmationTitle' => 'Order confirmation',
+];

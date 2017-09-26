@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'back' => 'Back',
+    'backToProfile' => 'Back to profile',
+    'mustCompleteForm' => 'You must complete the style quiz to access your Profile page.',
+    'myProfile' => 'My profile',
+    'adminSpace' => 'Admin space',
+    'kitRequests' => 'Look requests',
+    'blogs' => 'Blogs',
+    'lookbook' => 'Lookbook',
+    'changePassword' => 'Modify password',
+    'kitRequest' => 'Look request',
+    'changePreferences' => 'Modify preferences',
+    'addressBook' => 'My address book',
+    'addressBookUpdated' => 'Your address book has been updated successfully.',
+    'changeAddress' => 'Modify my address',
+    'addAddress' => 'Add an address',
+    'myKits' => 'My looks',
+    'kitHistory' => 'Look history',
+    'emailSubject' => 'Modification au compte pour : :customerName',
+    'emailTitle' => ':name has made modifications to his/her profile',
+    'emailText' => ':customerName vient de modifier ses préférences dans le profil personnalisé. Consultez son profil.',
+    'emailButton' => 'See the profile',
+    'taxes' => 'Taxes',
+    'passwordUpdated' => 'Your password has been updated.',
+    'incorrectPassword' => 'Your password is incorrect.',
+];

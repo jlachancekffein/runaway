@@ -1,0 +1,103 @@
+
+.question-contactInformation {
+    @extend .question;
+    
+    margin-bottom: 60px;
+}
+
+.question-contactInformationTitle {
+    font-size: 47px;
+    color: $gold;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.question-contactInformationSubtitle {
+    font-weight: 600;
+    font-size: 26px;
+    color: #414141;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.question-contactInformationProvince {
+    width: 100%;
+    
+    +.select2 .select2-selection {
+        border-left: 0;
+        border-bottom: 0;
+    }
+}
+
+.question-contactInformationTwoFields .form-field {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    
+    &:last-child .form-input { border-left: 0; }
+}
+
+.question-contactInformationTwoSeparatedFields .form-field {
+    display: inline-block;
+    vertical-align: top;
+    
+    &:first-child {
+        margin-right: 20px;
+        
+        @media (max-width: $screen-sm-max) {
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 480px) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.question-contactInformationFakeInput {
+    @extend .form-input;
+}
+
+.question-contactInformationContactMethodTitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #414141;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+
+.question-contactInformationContactMethod {
+    width: 150px;
+    
+    @media (max-width: $screen-sm-max) {
+        width: 107px;
+    }
+}
+
+.question-contactInformationContactHours {
+    width: 250px;
+    
+    @media (max-width: $screen-sm-max) {
+        width: 233px;
+    }
+}
+
+.question-contactInformationContactHours,
+.question-contactInformationContactHours + .select2 { display: none; }
+
+.question-contactInformationContactHours-visible + .select2 { display: block; }
+
+.question-contactInformationContactMethod + .select2 .select2-selection__rendered,
+.question-contactInformationContactHours + .select2 .select2-selection__rendered {
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    color: #414141 !important;
+}
+
+.question-contactInformationSubmitButton {
+    @extend .form-submitButton;
+    
+    margin-top: 14px;
+}

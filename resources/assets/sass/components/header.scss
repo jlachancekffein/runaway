@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    margin-bottom: 0;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brandHeadtag { margin: 0; }
+
+.navbar-brand {
+    padding-top: 0;
+    margin-left: 0 !important; // Overwrites bootstrap
+    padding-left: 0;
+    padding-right: 0;
+    
+    img {
+        height: 149px;
+        -webkit-transition: height 0.2s;
+        -o-transition: height 0.2s;
+        transition: height 0.2s;
+    }
+}
+
+.navbar-brand-smaller img { height: 100px; }
+
+.navbar-nav { margin-top: 17px; }
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mainMenu-element {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #868686;
+    font-size: 14px;
+    
+    &:hover {
+        background: none !important; // Overwrites bootstrap
+    }
+}

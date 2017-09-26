@@ -1,0 +1,34 @@
+.dropzoneBlock {
+
+    .dropzoneBlock-label {
+        display: block;
+        height: 371px;
+        line-height: 371px;
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #666;
+        cursor: pointer;
+        font-weight: normal;
+
+        &:hover {
+            border-color: #bbb;
+        }
+        &.dropzoneBlock-label-withImage {
+            height: auto;
+            line-height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .dropzoneBlock-input {
+        display: none;
+    }
+
+    .dropzoneBlock-preview {
+        width: 100%;
+    }
+
+}

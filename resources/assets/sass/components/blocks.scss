@@ -1,0 +1,34 @@
+.blocks-template {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px 15px;
+    border: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+
+    @media (min-width: 768px) {
+        border-radius: 4px;
+    }
+}
+
+.blocks-toolbar {
+    @extend .blocks-template;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    & .fa {
+        vertical-align: middle;
+    }
+}
+
+.blocks-header {
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+.blocks-menu {
+
+}

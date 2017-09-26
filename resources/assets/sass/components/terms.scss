@@ -1,0 +1,39 @@
+
+.terms {
+    @extend .layout-container;
+    
+    text-align: justify;
+    
+    ul,
+    ol { padding-left: 18px; }
+}
+
+.terms-section {
+    @extend .row;
+}
+
+.terms-sectionTitleContainer { // Nécessaire à cause du border de .terms-sectionTitle
+    @extend .col-lg-9;
+    @extend .col-md-10;
+    @extend .col-lg-offset-2;
+    @extend .col-md-offset-1;
+}
+
+.terms-sectionTitle {
+    height: 37px;
+    line-height: 36px;
+    border-bottom: 1px solid #c6c6c6;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    
+    &:first-child { margin-top: 60px; }
+}
+
+.terms-sectionContent {
+    @extend .col-lg-8;
+    @extend .col-md-9;
+    @extend .col-lg-offset-3;
+    @extend .col-md-offset-2;
+}

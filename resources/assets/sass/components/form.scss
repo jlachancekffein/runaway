@@ -1,0 +1,188 @@
+
+.form { overflow: hidden; }
+
+.form-title {
+    font-weight: 200;
+    font-size: 47px;
+    color: #acacac;
+    line-height: normal;
+    margin-top: 25px;
+    margin-bottom: 29px;
+}
+
+.form-createAccountTitle {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: 79px;
+    margin-bottom: 18px;
+    
+    @media (max-width: $screen-sm-max) {
+        margin-top: 0;
+    }
+}
+
+.form-createAccountSubtitle {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 17px;
+}
+
+.form-field { position: relative; }
+
+.form-label {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 16px;
+    
+    a {
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    margin-bottom: -1px;
+}
+
+.form-radio,
+.form-checkbox {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    // visibility: hidden; // S'il est invisible, il n'est pu sélectionnable avec le bouton tab
+}
+
+.form-radio {
+    top: 9px;
+    width: 23px;
+    height: 23px;
+}
+
+.form-checkbox {
+    top: 13px;
+    width: 25px;
+    height: 25px;
+}
+
+.form-radio + .form-label:before,
+.form-checkbox + .form-label:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    margin: 17px 12px 17px 0;
+    background: #fff;
+}
+
+.form-checkbox + .form-label:before {
+    width: 25px;
+    height: 25px;
+}
+
+.form-radio + .form-label:before {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.form-radio + .form-label:after {
+    content: '';
+    display: none;
+    background: url(/images/radio-checked.png) center center no-repeat;
+    background-size: 19px;
+    position: absolute;
+    top: 15px;
+    left: 4px;
+    width: 19px;
+    height: 19px;
+}
+
+.form-checkbox:checked + .form-label:before {
+    background: url(/images/checkbox-checked.png) center center no-repeat #fff;
+    background-size: 21px;
+}
+
+.form-radio:checked + .form-label:after { display: block; }
+
+.form-radio + .form-label:focus,
+.form-checkbox + .form-label:focus {
+    outline: 0;
+    
+    &:before { outline: -webkit-focus-ring-color auto 5px; }
+}
+
+textarea.form-input { height: 192px; }
+
+.form-submitButton {
+    @extend .button-withBorder;
+    
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-forgotPassword {
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.form-success {
+    display: none;
+    opacity: 0;
+    margin-top: 20px;
+    
+    * { font-size: 20px; }
+}
+
+.select2-dropdown { z-index: 10; }
+
+.select2-selection {
+    border-radius: 0 !important;
+    border-color: #cacaca !important;
+    height: 47px !important;
+}
+
+.select2-selection__rendered {
+    line-height: 47px !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    color: $gold !important;
+}
+
+.select2-selection__arrow {
+    top: 50% !important;
+    margin-top: -13px !important;
+}
+
+.select2-results__options {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: $gold !important;
+}
+
+.form-field-errored { border: 1px solid #c50000; }
+
+.form-checkbox.form-field-errored + .form-label:before,
+.form-radio.form-field-errored + .form-label:before { border-color: #c50000; }
+
+.form-field-errored + .select2 .select2-selection { border-color: #c50000 !important; }
+
+.form-error {
+    @extend .alert;
+    @extend .alert-danger;
+    
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

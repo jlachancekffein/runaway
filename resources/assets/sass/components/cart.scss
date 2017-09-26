@@ -1,0 +1,111 @@
+.cart {
+    
+    @media (max-width: $screen-xs-max) {
+        tr {
+            display: block;
+            
+            &:after {
+                content: ' ';
+                display: table;
+                clear: both;
+            }
+        }
+    }
+}
+
+.cart-sum {
+    font-weight: bold;
+}
+
+.cart-sumLabel {
+    text-align: right;
+}
+
+.cart-emptyCell {
+    border: 0;
+
+    .table > tbody > tr > & {
+        border: 0;
+    }
+}
+
+.cart-productLine {
+    @media (max-width: $screen-xs-max) {
+        position: relative;
+        margin-bottom: 51px;
+        
+        td,
+        th {
+            display: block;
+            float: left;
+        }
+        
+        td:nth-child(1),
+        th:nth-child(1) {
+            width: -webkit-calc(100% - 80px);
+            width: calc(100% - 80px);
+        }
+        
+        td:nth-child(2),
+        th:nth-child(2),
+        td:nth-child(3),
+        th:nth-child(3) {
+            width: 0;
+            padding: 0;
+        }
+        
+        td:nth-child(4),
+        th:nth-child(4) { width: 80px; }
+    }
+}
+
+.cart-productLine-removed {
+    background-color: #eee;
+    color: #ccc;
+}
+
+.cart-buttons {
+    text-align: right;
+}
+
+.cart-button-disabled {
+    background: #ccc;
+}
+
+.cart-productActions {
+    @media (max-width: $screen-xs-max) {
+        * {
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+    }
+}
+
+.cart-totalLine {
+    @media (max-width: $screen-xs-max) {
+        td,
+        th {
+            display: block;
+            float: left;
+        }
+        
+        td:nth-child(1),
+        th:nth-child(1) {
+            width: -webkit-calc(100% - 180px);
+            width: calc(100% - 180px);
+        }
+        
+        td:nth-child(2),
+        th:nth-child(2) {
+            width: 0;
+            padding: 0;
+        }
+        
+        td:nth-child(3),
+        th:nth-child(3) { width: 100px; }
+        
+        td:nth-child(4),
+        th:nth-child(4) { width: 80px; }
+    }
+}

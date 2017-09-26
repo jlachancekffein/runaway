@@ -1,0 +1,69 @@
+
+.question-bodyShapeGroup {
+    
+    @media (max-width: 480px) {
+        text-align: center;
+    }
+}
+
+.question-bodyShapeTitle {
+    @extend .question-fieldTitle;
+    
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    margin-top: 10px;
+    text-align: left;
+    
+    @media (max-width: $screen-md-max) {
+        width: 100%;
+        display: block;
+    }
+}
+
+.question-bodyShapeField {
+    display: inline-block;
+    vertical-align: top;
+    width: -webkit-calc(85% / 5);
+    width: calc(85% / 5);
+    position: relative;
+    overflow: hidden;
+    
+    @media (max-width: $screen-md-max) {
+        width: 20%;
+    }
+    
+    @media (max-width: 480px) {
+        width: 33.33%;
+        margin-bottom: 20px;
+    }
+}
+
+.question-bodyShapeImage { width: 100%; }
+
+.question-bodyShapeInput {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    padding: 0 13px;
+    outline: 0;
+    
+    @media (max-width: $screen-sm-max) {
+        padding: 0;
+    }
+}
+
+.question-bodyShapeInput.fakeInput-checked:before {
+    content: ' ';
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(/images/checked-gold.png) center center no-repeat;
+    background-size: 44px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -22px;
+}

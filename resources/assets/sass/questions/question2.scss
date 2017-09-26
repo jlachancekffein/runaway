@@ -1,0 +1,120 @@
+
+.question-hairColorGroup,
+.question-eyeColorGroup,
+.question-skinColorGroup {
+    @extend .col-sm-6;
+    
+    @media (max-width: $screen-xs-max) {
+        text-align: center;
+    }
+}
+
+.question-hairColorGroup {
+    padding-right: 65px;
+    
+    &:after {
+        content: ' ';
+        display: block;
+        width: 1px;
+        background: #c7c7c7;
+        position: absolute;
+        top: 32px;
+        right: 0;
+        bottom: 3px;
+    }
+    
+    @media (max-width: $screen-md-max) {
+        padding-right: 30px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        padding-right: 15px;
+    }
+    
+    @media (max-width: 480px) {
+        margin-bottom: 30px;
+    }
+}
+
+.question-eyeColorGroup,
+.question-skinColorGroup {
+    padding-left: 65px;
+    
+    @media (max-width: $screen-md-max) {
+        padding-left: 30px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        padding-left: 15px;
+    }
+    
+    &:before {
+        content: ' ';
+        display: block;
+        width: 1px;
+        background: #c7c7c7;
+        position: absolute;
+        top: 32px;
+        left: -1px;
+        bottom: 3px;
+    }
+}
+
+.question-eyeColorGroup {
+    margin-bottom: 44px;
+    
+    @media (max-width: 480px) {
+        margin-bottom: 30px;
+    }
+}
+
+.question-colorsTitle {
+    @extend .question-fieldTitle;
+    
+    margin-bottom: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: left;
+}
+
+.question-colorsField {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    max-width: 85px;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.question-colorImage { width: 100%; }
+
+.question-skinColorImage {
+    @extend .question-colorImage;
+    
+    padding-top: 100%;
+}
+
+.question-colorsInput {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.question-colorsInput.fakeInput-checked:before {
+    content: ' ';
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(/images/checked.png) center center no-repeat;
+    background-size: 44px;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    left: 50%;
+    margin-left: -22px;
+}

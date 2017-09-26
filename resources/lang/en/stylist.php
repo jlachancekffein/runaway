@@ -1,0 +1,13 @@
+<?php
+
+return [
+    'title' => 'Marie-Chrystelle Cheikha',
+    'paragraph1' => 'Fashion is part of the Cheikha’s family history and passion! The name Cheikha is synonym with women\'s fashion for nearly 30 years now. Marie-Chrystelle Cheikha, founder of Runway 2 Doorway, is proud to continue into her family\'s expertise. Here\'s a little more about the woman who thought about and created the amazing online personal stylist service Runway 2 Doorway:',
+    'paragraph2' => 'Marie-Chrystelle Cheikha pretty much grew up at the same pace as her parent\'s high-end boutiques. They first opened in 1988 and after nearly 30 years working hard to become leaders in ready-to-wear women\'s clothes and accessories, they now have 4 locations, close to 30 employees and they offer more than 40 different and exclusive brands.',
+    'paragraph3' => 'Like the saying goes, the apple did not fall far from the tree! Marie-Chrystelle\'s desire is to refine the art of personal styling in women\'s fashion. It is with this dream in mind that she went studying fashion both in Quebec and Montreal.',
+    'paragraph4' => 'Always wanting to perfect her knowledge, she traveled the world to discover new cultures and fashion trends to contribute to the family business. In 2011, rich from all her experiences and studies, she officially enters the Cheikha Group.',
+    'paragraph5' => 'Her unique talent brings Marie-Chrystelle to important roles in the company, such as buyer, stylist and manager. The tips and advices she gives about women\'s fashion are deeply appreciated within the Cheikha Group\'s clients.',
+    'paragraph6' => '«Woman above all» is Cheikha Group\'s moto and it perfectly matches the thinking of Marie-Chrystelle. In fact, this is why she wanted to offer more to women. Women\'s reality has changed in the last 30 years since the Cheikha Group\'s first days. Women have busier lives which makes it harder and harder to find time to go shopping, and make up their minds to choose the clothes that will suit them perfectly.',
+    'paragraph7' => 'With Runway 2 Doorway, Marie-Chrystelle wants to give the all-inclusive experience to women of being helped from shopping to wearing high-end clothes. She wants to give an easier access to high-end clothes by offering a FREE service of online personal styling where tips and advices given to you are free and you only pay for the clothes you want.',
+    'paragraph8' => 'An amazing unique online experience in women\'s fashion, signed Marie-Chrystelle Cheïkha.',
+];

@@ -1,0 +1,109 @@
+
+.layout-container {
+    @extend .container;
+    
+    display: block; // To ensure it is display: block, if used on inline elements
+}
+
+.layout-row {
+    @extend .row;
+}
+
+.layout-noPaddingContainer {
+    @extend .layout-container;
+    
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.layout-leftSmall {
+    @extend .col-md-1;
+}
+
+.layout-leftMedium {
+    @extend .col-md-3;
+}
+
+.layout-rightBig {
+    @extend .col-lg-8;
+    @extend .col-md-9;
+    @extend .col-sm-12;
+}
+
+.layout-leftMedium,
+.layout-rightBig {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.layout-rightLarge {
+    @extend .col-lg-10;
+    @extend .col-lg-pull-1;
+    @extend .col-md-11;
+    
+    float: right; // Ensure to stay on the right if .backButton isn't there
+    
+    @media (max-width: 480px) {
+        float: none;
+    }
+}
+
+.layout-rightLessLarge {
+    @extend .col-lg-9;
+    @extend .col-lg-pull-1;
+    @extend .col-md-11;
+    
+    float: right; // Ensure to stay on the right if .backButton isn't there
+    
+    @media (max-width: 480px) {
+        float: none;
+    }
+}
+
+.layout-leftPadding {
+    @extend .col-md-offset-1;
+}
+
+.layout-imageFormImage {
+    @extend .col-lg-4;
+    @extend .col-lg-offset-2;
+    @extend .col-md-5;
+    @extend .col-md-offset-1;
+    @extend .col-sm-6;
+    
+    @media (max-width: $screen-xs-max) {
+        display: none !important;
+    }
+}
+
+.layout-imageFormForm {
+    @extend .col-lg-5;
+    @extend .col-sm-6;
+    
+    @media (max-width: $screen-xs-max) {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+    }
+}
+
+.layout-imageFormImage,
+.layout-imageFormForm {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.layout-profileContainer {
+    @extend .col-lg-8;
+    @extend .col-md-10;
+    @extend .col-lg-offset-2;
+    @extend .col-md-offset-1;
+}
+
+.layout-largerProfileContainer {
+    @extend .col-md-10;
+    @extend .col-md-offset-1;
+}

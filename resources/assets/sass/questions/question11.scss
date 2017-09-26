@@ -1,0 +1,41 @@
+
+.question-finalStepImageMessageImage {
+    @extend .layout-imageFormImage;
+    
+    vertical-align: middle;
+}
+
+.question-finalStepImageMessageMessage {
+    @extend .layout-imageFormForm;
+    
+    vertical-align: middle;
+}
+
+.question-finalStepTitle {
+    font-weight: 600;
+    font-size: 26px;
+    color: #414141;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+
+.question-finalStepText p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #414141;
+    line-height: 26px;
+    margin-bottom: 26px;
+    
+    strong {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    &:last-child { margin-bottom: 0; }
+}
+
+.question-finalStepSignature {
+    margin-bottom: 20px;
+    width: 150px;
+}

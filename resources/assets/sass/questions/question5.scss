@@ -1,0 +1,171 @@
+
+.question-measurementsGroup {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    position: relative;
+    
+    &:before {
+        content: ' ';
+        display: block;
+        width: 1px;
+        background: #cacaca;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+        
+        &:before {
+            content: '';
+            display: none;
+        }
+    }
+}
+
+.question-measurementsGroup-left {
+    @extend .question-measurementsGroup;
+    
+    padding-right: 50px;
+    
+    &:before { right: 0; }
+    
+    @media (max-width: $screen-xs-max) {
+        padding-right: 0;
+    }
+}
+
+.question-measurementsGroup-right {
+    @extend .question-measurementsGroup;
+    
+    padding-left: 50px;
+    
+    &:before { left: -1px; }
+    
+    @media (max-width: $screen-xs-max) {
+        padding-left: 0;
+    }
+}
+
+.question-measurementsGroup .question-field {
+    margin-bottom: 22px;
+    
+    &:last-child { margin-bottom: 0; }
+}
+
+.question-measurementsTitle {
+    @extend .question-fieldTitle;
+    
+    margin-bottom: 12px;
+}
+
+.question-measurementsSelect,
+.question-measurementsInput {
+    font-weight: 400;
+    font-size: 20px;
+    color: $gold;
+    text-align: center;
+}
+
+.question-measurementsSelect {
+    display: block;
+    width: 75px;
+}
+
+.question-heightSelect {
+    @extend .question-measurementsSelect;
+    
+    width: 200px;
+}
+
+.question-braBandSizeSelect {
+    @extend .question-measurementsSelect;
+    
+    margin-right: 8px;
+}
+
+.question-measurementsInput {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+}
+
+.question-weightInput {
+    @extend .question-measurementsInput;
+    
+    width: 75px;
+    margin-right: 10px;
+}
+
+.question-measurementsRadioGroup {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.question-measurementsRadio {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    
+    &:before {
+        content: '';
+        display: none;
+        background: url(/images/radio-checked.png) center center no-repeat;
+        background-size: 19px;
+        position: absolute;
+        top: 15px;
+        left: 4px;
+        width: 19px;
+        height: 19px;
+    }
+    
+    &.fakeInput-checked:before {
+        content: ' ';
+        display: block;
+    }
+}
+
+.question-measurementsLabel {
+    @extend .form-label;
+    
+    padding-left: 8px;
+    margin-right: 25px;
+    height: 47px;
+    line-height: 47px;
+    cursor: pointer;
+}
+
+.question-europeanChartButton {
+    text-align: left;
+    line-height: 11px;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    color: #000;
+    padding-left: 24px;
+    background: url(/images/europeanChart.svg) center left no-repeat;
+    background-size: 20px;
+    margin-left: 12px;
+    opacity: 0.45;
+    height: 22px;
+}
+
+.europeeanChart {
+    border-left: 1px solid #cacaca;
+    border-top: 1px solid #cacaca;
+    
+    th, td {
+        text-align: center;
+        padding: 3px;
+        border-right: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca;
+    }
+}

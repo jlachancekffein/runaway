@@ -1,0 +1,135 @@
+.howItWork {
+    @extend .layout-container;
+    
+    +.howItWork {
+        margin-top: -1px;
+    }
+}
+
+.howItWork-odd {
+    @extend .howItWork;
+}
+
+.howItWork-content {
+    background: #f5f5f5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+    
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.howItWork-odd .howItWork-content { background: #fff; }
+
+.howItWork-texts {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.howItWork-number {
+    display: block;
+    margin: 0 auto;
+    
+    @media (max-width: $screen-md-max) {
+        width: 200px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        width: 150px;
+    }
+}
+
+.howItWork-title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 20px;
+    margin: 28px auto 0;
+    width: 60%;
+    text-align: center;
+    
+    @media (max-width: $screen-md-max) {
+        width: 80%;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+}
+
+.howItWork-text {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 19px auto 0;
+    width: 60%;
+    text-align: center;
+    
+    @media (max-width: $screen-md-max) {
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 10px;
+        line-height: 16px;
+    }
+    
+    a { text-decoration: underline; }
+}
+
+.howItWork-image {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    
+    @media (max-width: $screen-xs-max) {
+        display: none;
+    }
+}
+
+.howItWork-buttons {
+    @extend .layout-container;
+    
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.howItWork-button {
+    @extend .button;
+    
+    margin-bottom: 5px;
+}
+
+.howItWork-paragraph {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    
+    a { text-decoration: underline; }
+}
+
+.howItWork-paragraphBlock { font-size: 16px; }

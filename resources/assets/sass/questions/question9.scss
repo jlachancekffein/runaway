@@ -1,0 +1,68 @@
+
+.question-brandTitle {
+    @extend .question-fieldTitle;
+    
+    margin-bottom: 0;
+}
+
+.question-brandField {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    min-width: 140px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+    
+    @media (max-width: $screen-md-max) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.question-brandImageContainer {
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 10px;
+}
+
+.question-brandImage {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 80%;
+}
+
+.question-brandMannequinImage { width: 100%; }
+
+.question-brandInput {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+}
+
+.question-brandInput.fakeInput-checked:before {
+    content: ' ';
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(/images/checked-gold.png) center center no-repeat;
+    background-size: 44px;
+    position: absolute;
+    top: 245px;
+    left: 50%;
+    margin-left: -22px;
+}
+
+.question-brandLabel {
+    font-weight: 300;
+    font-size: 16px;
+    color: #414141;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

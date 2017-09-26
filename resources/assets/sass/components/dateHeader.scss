@@ -1,0 +1,23 @@
+
+.dateHeader {
+    height: 37px;
+    line-height: 36px;
+    border-bottom: 1px solid #c6c6c6;
+    margin-top: 100px;
+}
+
+.mainTitle + .dateHeader { margin-top: 60px; }
+
+.dateHeader-year {
+    padding-right: 10px;
+    border-right: 1px solid #c6c6c6;
+    margin-right: 10px;
+}
+
+.dateHeader-year,
+.dateHeader-season {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 19px;
+    font-weight: 600;
+}

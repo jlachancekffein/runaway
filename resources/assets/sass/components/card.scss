@@ -1,0 +1,7 @@
+.jp-card .jp-card-back {
+    z-index: 1;
+}
+
+.jp-card.jp-card-flipped .jp-card-front {
+    z-index: 0;
+}

@@ -1,0 +1,133 @@
+
+.lookbookTeaser {
+    @extend .layout-noPaddingContainer;
+    
+    margin-top: 150px;
+    
+    @media (max-width: $screen-xs-max) {
+        margin-top: 75px;
+    }
+}
+
+.lookbookTeaser-textsAndImages {
+    @extend .col-sm-9;
+    
+    padding-right: 40px;
+    
+    @media (max-width: $screen-sm-max) {
+        padding-right: 15px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+    }
+}
+
+.lookbookTeaser-texts {
+    // @extend .layout-leftPadding;
+    margin-left: 95px; // Patch pcq .layout-leftPadding ne fonctionne que si le parent est fullwidth
+    @media (max-width: $screen-md-max) { margin-left: 78px; } // Patch pcq .layout-leftPadding ne fonctionne que si le parent est fullwidth
+    @media (max-width: $screen-sm-max) { margin-left: 0; } // Patch pcq .layout-leftPadding ne fonctionne que si le parent est fullwidth
+    
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    margin-top: 8px;
+    
+    @media (max-width: $screen-sm-max) {
+        border: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
+
+.lookbookTeaser-title {
+    @extend .mainTitle;
+    
+    display: inline-block;
+}
+
+.lookbookTeaser-text {
+    display: inline-block;
+    width: 194px;
+    padding-right: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    float: right;
+    text-align: right;
+    margin: 0;
+    margin-top: 18px;
+    line-height: 20px;
+    position: relative;
+    
+    &:before,
+    &:after {
+        content: ' ';
+        display: block;
+        width: 0;
+        height: 0;
+        border: 14px solid transparent;
+        border-right-width: 0;
+        position: absolute;
+        bottom: 2px;
+    }
+    
+    &:before {
+        border-left-color: #fff;
+        right: 6px;
+        z-index: 2;
+    }
+    
+    &:after {
+        border-left-color: $gold;
+        right: 4px;
+        z-index: 1;
+    }
+    
+    @media (max-width: $screen-sm-max) {
+        display: block;
+        text-align: left;
+        width: auto;
+        line-height: 28px;
+        float: none;
+        
+        &:before,
+        &:after { bottom: 0; }
+    }
+}
+
+.lookbookTeaser-images {
+    
+    
+    img { width: 100%; }
+}
+
+.lookbookTeaser-mainImage {
+    @extend .col-sm-3;
+    
+    padding-left: 0;
+    
+    img { width: 100%; }
+    
+    @media (max-width: $screen-xs-max) {
+        display: none !important;
+    }
+}
+
+.lookbookTeaser-textsAndImages,
+.lookbookTeaser-mainImage {
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.lookbookTeaser-paragraph {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.lookbookTeaser-paragraph-underlined {
+    @extend .lookbookTeaser-paragraph;
+    
+    text-decoration: underline;
+}

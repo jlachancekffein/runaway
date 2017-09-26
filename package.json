@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "accounting": "^0.4.1",
+    "animate.css": "^3.5.2",
+    "bootstrap-datepicker": "^1.6.4",
+    "bootstrap-sass": "^3.0.0",
+    "card": "^2.0.3",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.1",
+    "laravel-elixir": "^5.0.0",
+    "select2": "^4.0.3",
+    "simplemde": "^1.11.2",
+    "vue": "^2.1.4",
+    "vue-resource": "^1.0.3"
+  },
+  "dependencies": {
+    "sticky-kit": "^1.1.3"
+  }
+}

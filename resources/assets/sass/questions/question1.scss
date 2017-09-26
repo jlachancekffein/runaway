@@ -1,0 +1,63 @@
+
+.question-stylesGroup {
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.question-stylesField {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 25px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    
+    @media (max-width: 480px) {
+        padding: 0 10px;
+    }
+}
+
+.question-stylesInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    margin: 0 !important; // Overwrites bootstrap
+}
+
+.question-stylesImage {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.question-stylesLabel {
+    display: block;
+    font-weight: 300;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 3px;
+    letter-spacing: 0.3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.question-stylesInput:checked + .question-stylesLabel {
+    .question-stylesImage { opacity: 0.2; }
+    
+    &:before {
+        content: ' ';
+        display: block;
+        width: 44px;
+        height: 44px;
+        background: url(/images/checked-gold.png) center center no-repeat;
+        background-size: 44px;
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        margin-left: -22px;
+    }
+}

@@ -1,0 +1,75 @@
+
+.client {
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    @media print {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.client-container {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.client-inlineElement {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    
+    .client-inlineElement {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.client-label {
+    font-weight: 400;
+    margin: 0;
+    
+    @media print {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.clientKits {
+    
+    @media print {
+        display: none;
+    }
+}
+
+.openableKit {
+    cursor: pointer;
+    
+    + .openableKit-content { display: none; }
+}
+
+.openableKit-opened + .openableKit-content {
+    display: table-row;
+}
+
+.openableKit-contentTitle {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.strike-product td {
+    position: relative;
+    text-decoration: none !important;
+    
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+}

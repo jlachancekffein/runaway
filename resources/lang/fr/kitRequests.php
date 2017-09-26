@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'title' => 'Demander un nouveau look',
+    'intro' => 'Afin de nous aider, indiquez-nous votre budget qui vous conviendrait pour un look? (taxes incluses)',
+    'nameLabel' => 'Nom de votre look',
+    'nameExample' => 'Exemple : tailleurs pour mon emploi, tenue élégante pour le mariage de ma fille',
+    'budgetLabel' => 'Idée de budget pour votre look',
+    'commentLabel' => 'Autres informations qui pourraient aider notre styliste',
+    'commentExample' => 'Exemple : je dois cacher mes épaules, je travaille dans un environnement très froid',
+    'commentPlaceholder' => '',
+    '-200' => 'Moins de 200&nbsp;$',
+    '-500' => 'Moins de 500&nbsp;$',
+    '-1000' => 'Moins de 1000&nbsp;$',
+    '-2000' => 'Moins de 2000&nbsp;$',
+    '+2000' => 'Plus de 2000&nbsp;$',
+    'submitButton' => 'Demander un look',
+    // 'successMessage' => '<p>Nous avons bien reçu votre demande d\'un nouveau look.</p><p>Vous recevrez d\'ici les prochains jours un courriel contenant votre look. Vous aurez à ce moment 2 jours ouvrables pour confirmer votre achat.</p>',
+    'successMessage' => '<p>Nous avons bien reçu votre demande.</p><p>L\'analyse de votre profil est présentement en cours ! Nous vous enverrons un message dans quelques jours pour vous aviser de l\'arrivée des vêtements et accessoires que nous aurons sélectionné pour vous.</p><p><strong>Vous aurez à ce moment 2 jours ouvrables pour confirmer votre achat </strong>.</p><p>Bien à vous,</p>',
+    'emailSubject' => 'Nouvelle commande pour : :name',
+    'emailTitle' => 'Vous avez reçu une nouvelle demande de look.',
+    'emailText' => ':name vient de tout juste de demander un nouveau look. Consultez sa demande.',
+    'emailNameField' => 'Nom',
+    'emailBudgetField' => 'Budget',
+    'emailCommentField' => 'Commentaire',
+    'emailButton' => 'Créer un look pour ce client',
+    'confirmationTitle' => 'Confirmation de votre demande',
+];
