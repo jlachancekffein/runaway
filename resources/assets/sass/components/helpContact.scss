@@ -21,10 +21,10 @@
 }
 
 .helpContact-button {
-    @extend .buttonTransparent;
+    @extend .buttonAnimated-gold;
     
     vertical-align: middle;
-    margin: 0 5px;
+    margin: 0 16px;
     
     @media (max-width: $screen-sm-max) {
         margin-top: 2px;

@@ -39,3 +39,7 @@
     margin-bottom: 20px;
     width: 150px;
 }
+
+.question-final-btn{
+  @extend .buttonAnimated-gold;
+}

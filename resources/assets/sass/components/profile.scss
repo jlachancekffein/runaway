@@ -8,6 +8,10 @@
         display: block;
         margin-bottom: 5px;
     }
+
+    .button{
+      @extend .buttonAnimated-gold;
+    }
 }
 
 .profile-form {
@@ -79,4 +83,8 @@
 .profile-modifyAddressForm-visible {
     opacity: 1;
     height: auto;
+}
+
+.js-profileAddAddress{
+  @extend .buttonAnimated-gold;
 }

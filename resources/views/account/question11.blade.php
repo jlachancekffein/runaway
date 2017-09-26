@@ -17,7 +17,7 @@
             {!! trans('questions.finalStepText', ['email' => $email]) !!}
             <?php /*<img class="question-finalStepSignature" src="/images/mc-cheikha.jpg" alt="">
             <p>{{ trans('questions.finalStepFounder') }}</p>*/ ?>
-            <a class="button" href="{{ url('account/kit-request') }}">{!! trans('questions.placeOrder') !!}</a>
+            <a class="button question-final-btn" href="{{ url('account/kit-request') }}">{!! trans('questions.placeOrder') !!}</a>
         </div>
     </div>
     
