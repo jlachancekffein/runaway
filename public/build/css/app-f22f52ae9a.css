@@ -8367,7 +8367,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #414141;
-  padding-top: 100px;
+  padding-top: 130px;
   padding-right: 0 !important; }
   body.modal-open {
     overflow: auto !important; }
@@ -9103,12 +9103,22 @@ button {
       text-align: center; } }
 
 .footer-socialIcon {
+  width: 40px;
+  height: 40px;
   display: inline-block;
-  vertical-align: top;
-  width: 49px;
-  margin-left: 8px; }
-  .footer-socialIcon img {
-    width: 100%; }
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100%;
+  transition: all 0.25s; }
+  .footer-socialIcon .fa {
+    position: relative;
+    left: 2px; }
+  .footer-socialIcon:hover {
+    border-color: rgba(255, 255, 255, 0);
+    color: white; }
 
 .footer-language {
   float: right;
