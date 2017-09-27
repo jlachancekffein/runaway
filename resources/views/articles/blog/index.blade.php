@@ -26,8 +26,9 @@
         <p class="regularParagraph"><button class="article-header-btn" type="button" data-toggle="modal" data-target="#modal-newsletter">{{ trans('blog.link1') }}</button></p>
         <p class="regularParagraph">
             {{ trans('blog.link2') }}&nbsp;&nbsp;<?php
-            ?><a href="{{ trans('general.facebook') }}" target="_blank">Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp;<?php
-            ?><a href="{{ trans('general.instagram') }}" target="_blank">Instagram</a>
+            ?><a href="{{ trans('general.facebook') }}" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;<?php
+            ?><a href="{{ trans('general.instagram') }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;<?php
+            ?><a href="{{ trans('general.pinterest') }}" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
         </p>
 
         @foreach ($yearBlogs as $year => $seasonBlogs)
