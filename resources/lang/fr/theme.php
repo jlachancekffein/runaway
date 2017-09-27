@@ -27,7 +27,7 @@ return [
     'changePassword' => 'Modifier mon mot de passe',
     'slogan' => 'FR-Slogan à inscrire ici Blandit leifend nulla feugiat',
     'social' => 'Suivez-nous sur',
-    'pinkPoka' => 'Pink Poka, le complément à votre style. Visitez notre boutique en ligne d\'accessoires haut de gamme.',
+    'pinkPoka' => 'Pink Poka, le complément à votre style. Visitez notre boutique en ligne d’accessoires',
     'copyright' => 'Tous droits réservés &copy;',
     'madeByImarcom' => 'Agence de développement web',
     'brandSlogan' => 'Le support qu\'il vous faut',
