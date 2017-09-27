@@ -24,10 +24,10 @@ return [
     'becomingStylistQuestion' => 'Comment puis-je devenir styliste pour Runway 2 Doorway',
     'becomingStylistAnswer' => '<p>Vous désirez faire partie du « dream team »&nbsp;? Communiquez avec nous dès maintenant par courriel au <a href="mailto:'. trans('general.r2dEmail') .'">'. trans('general.r2dEmail') .'</a> et il nous fera un plaisir de considérer votre intérêt à devenir un stylisme partenaire pour R2D.</p>',
 
-    'fillFormEachOrderQuestion' => 'Dois-je remplir le questionnaire chaque fois que je veux commander un look',
+    'fillFormEachOrderQuestion' => 'Dois-je remplir le questionnaire chaque fois que je veux faire appel à vos service',
     'fillFormEachOrderAnswer' => '<p>Vous n\'avez pas à remplir le questionnaire à chaque commande d\'un look personnalisé. Par contre, il serait important de modifier vos préférences et mensurations s\'ils ont changé, depuis votre dernière commande, afin d\'assurer une sélection de vêtements à votre image.</p>',
 
-    'dealersNotPartnersQuestion' => 'Puis-je recevoir un look personnalisé de détaillants autre que vos partenaires',
+    'dealersNotPartnersQuestion' => 'Puis-je recevoir des vêtements de détaillants autres que votre partenaire',
     'dealersNotPartnersAnswer' => '<p>Il nous fera plaisir de vous offrir notre service de stylisme à la carte, et ainsi, aller magasiner pour vous dans vos boutiques préférées. <a href="' . url('stylism') . '">Renseignez-vous sur nos tarifs de « stylisme à la carte »</a>.</p>',
 
     'buyEveryItemsQuestion' => 'Suis-je obligé d\'acheter toutes les suggestions de mon styliste R2D',

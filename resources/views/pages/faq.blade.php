@@ -12,7 +12,7 @@
                 'delay', 'carrier', 'shippingCost'
             ),
             'partners'=> array(
-                'becomingPartner', 'partnersList', 'becomingStylist'
+                'partnersList', 'becomingStylist'
             ),
             'orders' => array(
                 'fillFormEachOrder', 'dealersNotPartners', 'buyEveryItems', 'meetStylist'
