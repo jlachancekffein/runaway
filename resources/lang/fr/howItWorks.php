@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => 'Ne magasinez plus jamais pour des vêtements.',
-    'headerText1' => 'Vous êtes à quelques clics de recevoir un look personnalisé à la maison, aussi souvent que vous le désirez. Nos looks contiennent uniquement des vêtements et accessoires des meilleures marques, soigneusement sélectionnés par votre styliste R2D selon vos préférences, votre style et votre budget. Nos consultants mode féminine se spécialisent dans tout : des vêtements de travail jusqu\'aux tenues de grandes occasions, et sont toujours disponibles pour vous donner des conseils personnalisés.',
-    'headerText2' => 'Le service de stylisme personnalisé <em>RUNWAY 2 DOORWAY</em> a été pensé pour les femmes occupées et stylisées, tout comme vous.',
+    'title' => 'Profiter de vêtements haut de gamme féminin à rabais en&nbsp;tout&nbsp;temps',
+    'headerText1' => "Vous êtes à quelques clics de recevoir une sélection personnalisée d’un ou plusieurs items mode de qualité supérieure à un prix plus accessible et ce, aussi souvent que vous le désiriez. Nos produits sont uniquement des vêtements et accessoires haut de gamme féminins à rabais qui seront soigneusement sélectionnés par votre styliste R2D selon vos préférences, votre style et votre budget. Nos stylistes modes se spécialisent dans la sélection de vêtements de travail jusqu'aux tenues de grandes occasions, et sont toujours disponibles pour vous donner des conseils personnalisés.",
+    'headerText2' => 'Le service RUNWAY 2 DOORWAY a été pensé pour les femmes occupées et stylisées, tout comme vous.',
     'headerText3' => 'Soyez à votre meilleur, en trois étapes simples.',
     'headerText4' => '',
     'title1' => 'Répondez à notre court questionnaire.',

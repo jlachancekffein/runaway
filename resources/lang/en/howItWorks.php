@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'title' => 'A new way to enhance and improve your shopping experience',
-    'headerText1' => 'You are literally clicks away from receiving your personalized look at your doorstep. As many times as you want, order and receive our boxes filled with high-end clothes and accessories from many luxury brands, selected by our personal stylists. We will ship you clothes that will perfectly fit your preferences, style and wallet.',
-    'headerText2' => 'Our stylists are experts in Women\'s fashion.  Should you need a personalized look to wear casually, or at work or at any other event, you will always get the best tips and advices for your own style.',
-    'headerText3' => 'Runway 2 Doorway\'s personal stylist service was created to help busy, savvy and distinguished women just like you.',
-    'headerText4' => 'Be at your best... in three simple steps.',
+    'title' => 'At all time, take advantage of our discounts on high end clothing for women',
+    'headerText1' => "You are literally a click away from receiving your personalized clothing selection at your doorstep. Our R2D stylist will select for you high end clothings and accessories on sale according to your preferences, style and budget. Our fashion stylists are able to find the perfect outfit for your needs, like business looks, casual looks, special events or your day- to-day outfits. They are always willing to give you fashion advices at all time. The Runway 2 Doorway service was created to make busy women’s life easier.",
+    'headerText2' => 'The Runway 2 Doorway service was created to make busy women’s life easier.',
+    'headerText3' => 'Be at your best... in three simple steps.',
+    'headerText4' => '',
     'title1' => 'Fill up the questionnaire.',
     'text1' => 'The more we know you, the happier you will be when you will unfold the box our personal stylist made for you.',
     'title2' => 'Request a look and approve what your R2D personal stylist has prepared for you.',
