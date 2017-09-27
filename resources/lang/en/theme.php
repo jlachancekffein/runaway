@@ -40,4 +40,5 @@ return [
     'newsletterPunchLine' => 'Subscribe to our newsletter to receive promotions and exclusive content.',
     'newsletterConfirmationInSpam' => 'Check your junk mail folder if you didn\'t receive the confirmation email.',
     'subBrand' => 'women\'s styling service',
+    'supheader' => "A personalized stylist service that gives you access to high end clothing for women on sale."
 ];

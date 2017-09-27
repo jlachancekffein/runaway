@@ -1,4 +1,5 @@
 <nav class="navbar navbar-white navbar-static-top">
+    <div class="navbar-supheader"><div class="layout-container">{{ trans('theme.supheader') }}</div></div>
     <div class="layout-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -20,7 +21,6 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/images/runway2doorway.png" alt="Runway 2 Doorway">
                 </a>
-                <div class="navbar-subBrand">{{ trans('theme.subBrand') }}</div>
             @if (Request::is('/'))
             </h1>
             @endif

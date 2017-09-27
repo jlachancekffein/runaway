@@ -40,4 +40,5 @@ return [
     'newsletterPunchLine' => 'Abonnez-vous à notre infolettre pour ne rien manquer de nos promotions et notre contenu exclusif.',
     'newsletterConfirmationInSpam' => 'Vérifiez vos courriels indésirables si vous ne recevez pas de courriel de confirmation.',
     'subBrand' => 'service de stylisme pour femme',
+    'supheader' => "Service de stylisme personnalisé offrant des vêtements et accessoires haut de gamme féminins à rabais"
 ];
