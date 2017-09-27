@@ -31,6 +31,8 @@ return [
     'style-glamour' => 'Élégante',
     'style-sportif' => 'Tenue de sport',
     'style-chic-event' => 'Soirée chic',
+    'style-5-7' => '5 à 7',
+    'style-outdoor' => 'Vêtement d\'extérieur',
     
     // Couleurs de cheveux
     'hairColorTitle' => 'Votre couleur de cheveux',
