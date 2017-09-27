@@ -133,13 +133,7 @@
         <h2 class="partners-title">{{ trans('home.partners') }}</h2><?php
         ?><p class="partners-text">{{ trans('home.partnersText') }}</p>
         <div class="partners-partnerList">
-            <a class="partners-partner" href="https://www.marc-cain.com/" target="_blank"><img height="25" src="/images/partner-Marccain.svg" alt="Marccain"></a><?php
-            ?><a class="partners-partner" href="http://groupecheikha.com/" target="_blank" style="top: -5px;"><img height="41" src="/images/partner-Cheikha.svg" alt="Cheïkha"></a><?php
-            ?><a class="partners-partner" href="http://groupecheikha.com/fr/josee-laurent" target="_blank" style="top: -6px;"><img height="30" src="/images/partner-Josee-Laurent.svg" alt="Josée Laurent"></a><?php
-            ?><a class="partners-partner" href="http://groupecheikha.com/fr/lentrepot" target="_blank" style="top: -5px;"><img height="41" src="/images/partner-Cheikha-entrepot.svg" alt="Cheïkha entrepot"></a><?php
-            ?><a class="partners-partner" href="https://www.facebook.com/m0851quebec/" target="_blank"><img height="37" src="/images/partner-m0851.png" alt="m0851"></a><?php
-            ?><a class="partners-partner" href="https://www.facebook.com/boutiqueurbain/" target="_blank"><img height="36" src="/images/partner-urbain.png" alt="Urbain | Prêt-à-porter"></a><?php
-            ?><a class="partners-partner" href="https://www.berceau.ca/" target="_blank" style="top: -21px;"><img height="57" src="/images/partner-berceau.jpg" alt="Berceau | maternité + allaitement"></a>
+          <a class="partners-partner" href="http://groupecheikha.com/fr/lentrepot" target="_blank" style="top: -5px;"><img height="41" src="/images/partner-Cheikha-entrepot.svg" alt="Cheïkha entrepot"></a>
         </div>
     </div>
 </div>
