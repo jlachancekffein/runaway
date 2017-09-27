@@ -1,0 +1,13 @@
+.env
+.DS_Store*
+.gulp*
+Session.vim*
+_ide_helper.php*
+debug.log*
+npm-debug.log*
+.idea*
+tags
+
+vendor/
+node_modules/
+storage/
