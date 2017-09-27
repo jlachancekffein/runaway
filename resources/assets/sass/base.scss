@@ -14,7 +14,7 @@ body {
     font-size: 14px;
     line-height: 22px;
     color: #414141;
-    padding-top: 100px;
+    padding-top: $nav-height;
     padding-right: 0 !important; // Overwrites bootstrap
     
     &.modal-open {
