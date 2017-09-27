@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="layout-noPaddingContainer">
-    
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     <div class="leftMenu js-leftMenu">
         <p class="leftMenu-title">Archive</p>
 
@@ -23,7 +23,7 @@
         <h1 class="mainTitle">{{ trans('blog.title') }}</h1>
         <p class="regularParagraph">{{ trans('blog.paragraph1') }}</p>
         <p class="regularParagraph">{{ trans('blog.paragraph2') }}</p>
-        <p class="regularParagraph"><button type="button" data-toggle="modal" data-target="#modal-newsletter">{{ trans('blog.link1') }}</button></p>
+        <p class="regularParagraph"><button class="article-header-btn" type="button" data-toggle="modal" data-target="#modal-newsletter">{{ trans('blog.link1') }}</button></p>
         <p class="regularParagraph">
             {{ trans('blog.link2') }}&nbsp;&nbsp;<?php
             ?><a href="{{ trans('general.facebook') }}" target="_blank">Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp;<?php
