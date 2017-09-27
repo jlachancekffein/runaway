@@ -20,10 +20,10 @@
                     @endif
                 </div>
 
-                <p class="kitRequest-intro">{{ trans('kitRequests.intro') }}</p>
+                <p class="kitRequest-intro">{{ trans('kitRequests.budgetLabel') }}</p>
                 
                 <div class="form-field">
-                    <label class="form-label" for="budgetField">{{ trans('kitRequests.budgetLabel') }}</label>
+                    <label class="form-label" for="budgetField">{{ trans('kitRequests.intro') }}</label>
                     <select class="form-input js-select2" name="budget" id="budgetField">
                         @foreach (config('kit.budget') as $budget)
                             <option value="{{ $budget }}" {{ old('budget') == $budget ? 'selected="selected"' : '' }}>{{ trans("kitRequests.$budget") }}</option>
