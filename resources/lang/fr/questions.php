@@ -272,7 +272,7 @@ return [
     'birthdayDayPlaceholder' => 'JJ',
     
     'finalStepTitle' => 'Bienvenue :name&nbsp;!',
-    'finalStepText' => '<p>Nous sommes très heureux de vous compter parmi les clientes du service de stylisme personnalisé Runway 2 Doorway.</p><p>Nous vous souhaitons la meilleure expérience magasinage qui soit&nbsp;! Faites votre première demande en cliquant ci-bas&nbsp;:</p>',
+    'finalStepText' => "<p>Nous sommes très heureux de vous compter parmi les clientes Runway 2 Doorway. Un service de stylisme personnalisé offrant des vêtements et accessoires haut de gamme féminin à rabais.</p><p>Nous vous souhaitons la meilleure expérience magasinage qui soit ! Faites votre première demande en cliquant ci-bas&nbsp;:</p>",
     'finalStepFounder' => 'Fondatrice',
     'placeOrder' => 'Faites votre demande',
     

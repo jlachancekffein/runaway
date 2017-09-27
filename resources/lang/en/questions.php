@@ -273,7 +273,7 @@ return [
     
     'finalStepTitle' => 'Welcome :name!',
     // 'finalStepText' => '<p>We are more than happy that you chose to hang to your style by requiring the services of Runway 2 Doorway. You should receive a confirmation via email at :email that your account was correctly created.</p><p>Your personal stylist, expert in women\'s fashion, is eager to create a look that will make you proud to wear.</p><p>Analysis of your profile is underway! We will be in touch with you via email in up to 48 hours to inform you to log on your account and discover what your personal stylist has prepared for you.</p><p>We hope you will be pleased and will appreciate this amazing shopping experience.</p><p>Best regards,</p>',
-    'finalStepText' => '<p>We are more than happy that you chose to hang to your style by requiring the services of Runway 2 Doorway.</p><p>We hope you will be pleased and will appreciate this amazing shopping experience. Order your first look by clicking down below:</p>',
+    'finalStepText' => "<p>We are more than happy to that you as a Runway 2 Doorway customer. A personalized stylist service that gives you access to high end clothing for women on sale.</p><p>We wish you the best shopping experience ever. Click here to make your request&nbsp;:</p>",
     'finalStepFounder' => 'Founder',
     'placeOrder' => 'Look Request',
     
