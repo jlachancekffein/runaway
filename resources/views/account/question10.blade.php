@@ -80,7 +80,7 @@
             <p class="question-contactInformationContactMethodTitle">{{ trans('questions.preferred_contact_method') }}</p>
             <div class="question-contactInformationTwoSeparatedFields">
                 <div class="form-field">
-                    <select class="question-contactInformationContactMethod js-contactMethod js-select2" name="preferences[contact_method]">
+                    <select class="question-contactInformationContactMethod js-contactMethod js-select2" name="preferences[contact_method]" data-select2hidesearch="true">
                         <option value=""></option>
                         <option{{ array_key_exists('contact_method', $preferences) && $preferences['contact_method'] == 'phone' ? ' selected="selected"' : '' }} value="phone">{{ trans('questions.phone') }}</option>
                         <option{{ (array_key_exists('contact_method', $preferences) && $preferences['contact_method'] == 'email') || !array_key_exists('contact_method', $preferences) ? ' selected="selected"' : '' }} value="email">{{ trans('questions.email') }}</option>

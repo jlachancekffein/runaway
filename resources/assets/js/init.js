@@ -97,12 +97,11 @@ $(function(){
     // l'argument "placeholder" est requis sinon la première <option value=""> deviens sélectionnable
     $(".js-select2").each(function(){
         var placeholder = "";
-
+        var minimumResultsForSearch = $(this).attr('data-select2hidesearch') === 'true' ? Infinity : 0;
         if ($(this).attr("placeholder") !== undefined) {
             placeholder = $(this).attr("placeholder");
         }
-
-        $(this).select2({ placeholder: placeholder });
+        $(this).select2({ placeholder: placeholder, minimumResultsForSearch: minimumResultsForSearch });
     });
 
     $(".js-fileUpload").on("change", function(e){

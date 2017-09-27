@@ -49,10 +49,10 @@
                 <a class="buttonTransparent-footer" href="{{ route('profile') }}">{{ trans('theme.myAccount') }}</a>
                 @endif
                 <div class="footer-social">
-                    {{ trans('theme.social') }}<?php
-                    ?><a class="footer-socialIcon" href="{{ trans('general.facebook') }}" target="_blank"><img src="/images/footer-facebook.png" alt="Facebook"></a><?php
-                    ?><a class="footer-socialIcon" href="{{ trans('general.instagram') }}" target="_blank"><img src="/images/footer-instagram.png" alt="Instagram"></a><?php
-                    /*?><a class="footer-socialIcon" href="javascript:;"><img src="/images/footer-google-plus.png" alt="Google +"></a>*/ ?>
+                    {{ trans('theme.social') }}
+                    <a class="footer-socialIcon" href="{{ trans('general.facebook') }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="footer-socialIcon" href="{{ trans('general.instagram') }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="footer-socialIcon" href="{{ trans('general.pinterest') }}" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                 </div>
                 <a class="footer-language" href="{{ url(URL::current()) }}?locale={{ trans('app.other_language_short') }}">{{ trans('app.other_language') }}</a>
             </div>

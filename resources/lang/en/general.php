@@ -28,7 +28,7 @@ return [
     'yukon' => 'Yukon',
     'facebook' => 'https://www.facebook.com/Runway-2-Doorway-485409798321187/',
     'instagram' => 'https://www.instagram.com/runway2doorway/',
-    'pinterest' => 'https://www.instagram.com/runway2doorway/',
+    'pinterest' => 'https://www.pinterest.ca/runway2doorway/',
     'r2dEmail' => 'info@runway2doorway.com',
     'update' => 'Update',
     'yes' => 'yes',

@@ -205,12 +205,28 @@
 }
 
 .footer-socialIcon {
-    display: inline-block;
-    vertical-align: top;
-    width: 49px;
-    margin-left: 8px;
     
-    img { width: 100%; }
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    transition: all 0.25s;
+
+    .fa{
+      position: relative;
+      left: 2px;
+    }
+
+    &:hover{
+      border-color: rgba(white, 0);
+      color: white;
+    }
+
 }
 
 .footer-language {
