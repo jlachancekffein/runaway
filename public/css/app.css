@@ -6859,10 +6859,8 @@ span.CodeMirror-selectedtext {
   background: rgba(255, 0, 0, 0.15); }
 
 /*!
- * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)
+ * Datepicker for Bootstrap v1.7.1 (https://github.com/uxsolutions/bootstrap-datepicker)
  *
- * Copyright 2012 Stefan Petre
- * Improvements by Andrew Rowls
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
 .datepicker {
@@ -6873,10 +6871,13 @@ span.CodeMirror-selectedtext {
 .datepicker-inline {
   width: 220px; }
 
-.datepicker.datepicker-rtl {
+.datepicker-rtl {
   direction: rtl; }
 
-.datepicker.datepicker-rtl table tr td span {
+.datepicker-rtl.dropdown-menu {
+  left: auto; }
+
+.datepicker-rtl table tr td span {
   float: right; }
 
 .datepicker-dropdown {
@@ -7249,6 +7250,10 @@ span.CodeMirror-selectedtext {
 .datepicker .next:hover,
 .datepicker tfoot tr th:hover {
   background: #eee; }
+
+.datepicker .prev.disabled,
+.datepicker .next.disabled {
+  visibility: hidden; }
 
 .datepicker .cw {
   font-size: 10px;
@@ -8528,7 +8533,7 @@ button {
       display: none; } }
 
 .button, .button-red, .button-facebook,
-.button-google, .button-withBorder, .form-submitButton, .question-contactInformationSubmitButton, .howItWork-button, .question-submit {
+.button-google, .button-withBorder {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 300;
@@ -8538,7 +8543,7 @@ button {
   background: #c09e7a;
   text-align: center; }
   .button:hover, .button-red:hover, .button-facebook:hover,
-  .button-google:hover, .button-withBorder:hover, .form-submitButton:hover, .question-contactInformationSubmitButton:hover, .howItWork-button:hover, .question-submit:hover {
+  .button-google:hover, .button-withBorder:hover {
     color: #fff; }
 
 .button-red {
@@ -8562,14 +8567,14 @@ button {
   background: #dd2a2a;
   margin-left: 3px; }
 
-.button-withBorder, .form-submitButton, .question-contactInformationSubmitButton {
+.button-withBorder {
   background: none;
   border: 1px solid #ccc;
   position: relative;
   padding: 23px;
   font-size: 22px;
   font-weight: 400; }
-  .button-withBorder:before, .form-submitButton:before, .question-contactInformationSubmitButton:before {
+  .button-withBorder:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -8580,7 +8585,8 @@ button {
     background: #000;
     z-index: -1; }
 
-.buttonAnimated, .buttonAnimated-gold, .headerButton, .buttonTransparent-footer, .buttonAnimated-black {
+.buttonAnimated, .buttonAnimated-gold, .headerButton, .buttonTransparent-footer, .regularParagraph button.article-header-btn, .howItWork-button, .form-submitButton, .helpContact-button, .profile-menu .button, .profile-menu .button-red, .profile-menu .button-facebook, .profile-menu
+.button-google, .profile-menu .button-withBorder, .js-profileAddAddress, .question-submit, .question-contactInformationSubmitButton, .question-final-btn, .buttonAnimated-black {
   text-transform: uppercase;
   font-size: 21px;
   font-weight: 400;
@@ -8589,7 +8595,9 @@ button {
   display: inline-block;
   position: relative;
   margin: 8px; }
-  .buttonAnimated:before, .buttonAnimated-gold:before, .headerButton:before, .buttonTransparent-footer:before, .buttonAnimated-black:before, .buttonAnimated:after, .buttonAnimated-gold:after, .headerButton:after, .buttonTransparent-footer:after, .buttonAnimated-black:after {
+  .buttonAnimated:before, .buttonAnimated-gold:before, .headerButton:before, .buttonTransparent-footer:before, .regularParagraph button.article-header-btn:before, .howItWork-button:before, .form-submitButton:before, .helpContact-button:before, .profile-menu .button:before, .profile-menu .button-red:before, .profile-menu .button-facebook:before, .profile-menu
+  .button-google:before, .profile-menu .button-withBorder:before, .js-profileAddAddress:before, .question-submit:before, .question-contactInformationSubmitButton:before, .question-final-btn:before, .buttonAnimated-black:before, .buttonAnimated:after, .buttonAnimated-gold:after, .headerButton:after, .buttonTransparent-footer:after, .regularParagraph button.article-header-btn:after, .howItWork-button:after, .form-submitButton:after, .helpContact-button:after, .profile-menu .button:after, .profile-menu .button-red:after, .profile-menu .button-facebook:after, .profile-menu
+  .button-google:after, .profile-menu .button-withBorder:after, .js-profileAddAddress:after, .question-submit:after, .question-contactInformationSubmitButton:after, .question-final-btn:after, .buttonAnimated-black:after {
     content: ' ';
     display: block;
     position: absolute;
@@ -8599,32 +8607,45 @@ button {
     bottom: -8px;
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s; }
-  .buttonAnimated:before, .buttonAnimated-gold:before, .headerButton:before, .buttonTransparent-footer:before, .buttonAnimated-black:before {
+  .buttonAnimated:before, .buttonAnimated-gold:before, .headerButton:before, .buttonTransparent-footer:before, .regularParagraph button.article-header-btn:before, .howItWork-button:before, .form-submitButton:before, .helpContact-button:before, .profile-menu .button:before, .profile-menu .button-red:before, .profile-menu .button-facebook:before, .profile-menu
+  .button-google:before, .profile-menu .button-withBorder:before, .js-profileAddAddress:before, .question-submit:before, .question-contactInformationSubmitButton:before, .question-final-btn:before, .buttonAnimated-black:before {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     transform: scale(0, 1); }
-  .buttonAnimated:after, .buttonAnimated-gold:after, .headerButton:after, .buttonTransparent-footer:after, .buttonAnimated-black:after {
+  .buttonAnimated:after, .buttonAnimated-gold:after, .headerButton:after, .buttonTransparent-footer:after, .regularParagraph button.article-header-btn:after, .howItWork-button:after, .form-submitButton:after, .helpContact-button:after, .profile-menu .button:after, .profile-menu .button-red:after, .profile-menu .button-facebook:after, .profile-menu
+  .button-google:after, .profile-menu .button-withBorder:after, .js-profileAddAddress:after, .question-submit:after, .question-contactInformationSubmitButton:after, .question-final-btn:after, .buttonAnimated-black:after {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     transform: scale(1, 0); }
-  .buttonAnimated:hover, .buttonAnimated-gold:hover, .headerButton:hover, .buttonTransparent-footer:hover, .buttonAnimated-black:hover, .buttonAnimated:focus, .buttonAnimated-gold:focus, .headerButton:focus, .buttonTransparent-footer:focus, .buttonAnimated-black:focus {
+  .buttonAnimated:hover, .buttonAnimated-gold:hover, .headerButton:hover, .buttonTransparent-footer:hover, .regularParagraph button.article-header-btn:hover, .howItWork-button:hover, .form-submitButton:hover, .helpContact-button:hover, .profile-menu .button:hover, .profile-menu .button-red:hover, .profile-menu .button-facebook:hover, .profile-menu
+  .button-google:hover, .profile-menu .button-withBorder:hover, .js-profileAddAddress:hover, .question-submit:hover, .question-contactInformationSubmitButton:hover, .question-final-btn:hover, .buttonAnimated-black:hover, .buttonAnimated:focus, .buttonAnimated-gold:focus, .headerButton:focus, .buttonTransparent-footer:focus, .regularParagraph button.article-header-btn:focus, .howItWork-button:focus, .form-submitButton:focus, .helpContact-button:focus, .profile-menu .button:focus, .profile-menu .button-red:focus, .profile-menu .button-facebook:focus, .profile-menu
+  .button-google:focus, .profile-menu .button-withBorder:focus, .js-profileAddAddress:focus, .question-submit:focus, .question-contactInformationSubmitButton:focus, .question-final-btn:focus, .buttonAnimated-black:focus {
     color: #fff; }
-    .buttonAnimated:hover:before, .buttonAnimated-gold:hover:before, .headerButton:hover:before, .buttonTransparent-footer:hover:before, .buttonAnimated-black:hover:before, .buttonAnimated:hover:after, .buttonAnimated-gold:hover:after, .headerButton:hover:after, .buttonTransparent-footer:hover:after, .buttonAnimated-black:hover:after, .buttonAnimated:focus:before, .buttonAnimated-gold:focus:before, .headerButton:focus:before, .buttonTransparent-footer:focus:before, .buttonAnimated-black:focus:before, .buttonAnimated:focus:after, .buttonAnimated-gold:focus:after, .headerButton:focus:after, .buttonTransparent-footer:focus:after, .buttonAnimated-black:focus:after {
+    .buttonAnimated:hover:before, .buttonAnimated-gold:hover:before, .headerButton:hover:before, .buttonTransparent-footer:hover:before, .regularParagraph button.article-header-btn:hover:before, .howItWork-button:hover:before, .form-submitButton:hover:before, .helpContact-button:hover:before, .profile-menu .button:hover:before, .profile-menu .button-red:hover:before, .profile-menu .button-facebook:hover:before, .profile-menu
+    .button-google:hover:before, .profile-menu .button-withBorder:hover:before, .js-profileAddAddress:hover:before, .question-submit:hover:before, .question-contactInformationSubmitButton:hover:before, .question-final-btn:hover:before, .buttonAnimated-black:hover:before, .buttonAnimated:hover:after, .buttonAnimated-gold:hover:after, .headerButton:hover:after, .buttonTransparent-footer:hover:after, .regularParagraph button.article-header-btn:hover:after, .howItWork-button:hover:after, .form-submitButton:hover:after, .helpContact-button:hover:after, .profile-menu .button:hover:after, .profile-menu .button-red:hover:after, .profile-menu .button-facebook:hover:after, .profile-menu
+    .button-google:hover:after, .profile-menu .button-withBorder:hover:after, .js-profileAddAddress:hover:after, .question-submit:hover:after, .question-contactInformationSubmitButton:hover:after, .question-final-btn:hover:after, .buttonAnimated-black:hover:after, .buttonAnimated:focus:before, .buttonAnimated-gold:focus:before, .headerButton:focus:before, .buttonTransparent-footer:focus:before, .regularParagraph button.article-header-btn:focus:before, .howItWork-button:focus:before, .form-submitButton:focus:before, .helpContact-button:focus:before, .profile-menu .button:focus:before, .profile-menu .button-red:focus:before, .profile-menu .button-facebook:focus:before, .profile-menu
+    .button-google:focus:before, .profile-menu .button-withBorder:focus:before, .js-profileAddAddress:focus:before, .question-submit:focus:before, .question-contactInformationSubmitButton:focus:before, .question-final-btn:focus:before, .buttonAnimated-black:focus:before, .buttonAnimated:focus:after, .buttonAnimated-gold:focus:after, .headerButton:focus:after, .buttonTransparent-footer:focus:after, .regularParagraph button.article-header-btn:focus:after, .howItWork-button:focus:after, .form-submitButton:focus:after, .helpContact-button:focus:after, .profile-menu .button:focus:after, .profile-menu .button-red:focus:after, .profile-menu .button-facebook:focus:after, .profile-menu
+    .button-google:focus:after, .profile-menu .button-withBorder:focus:after, .js-profileAddAddress:focus:after, .question-submit:focus:after, .question-contactInformationSubmitButton:focus:after, .question-final-btn:focus:after, .buttonAnimated-black:focus:after {
       opacity: 1;
       transform: scale(1); }
 
-.buttonAnimated-gold, .headerButton, .buttonTransparent-footer {
+.buttonAnimated-gold, .headerButton, .buttonTransparent-footer, .regularParagraph button.article-header-btn, .howItWork-button, .form-submitButton, .helpContact-button, .profile-menu .button, .profile-menu .button-red, .profile-menu .button-facebook, .profile-menu
+.button-google, .profile-menu .button-withBorder, .js-profileAddAddress, .question-submit, .question-contactInformationSubmitButton, .question-final-btn {
   color: #000;
   background: #c09e7a !important; }
-  .buttonAnimated-gold:before, .headerButton:before, .buttonTransparent-footer:before, .buttonAnimated-gold:after, .headerButton:after, .buttonTransparent-footer:after {
+  .buttonAnimated-gold:before, .headerButton:before, .buttonTransparent-footer:before, .regularParagraph button.article-header-btn:before, .howItWork-button:before, .form-submitButton:before, .helpContact-button:before, .profile-menu .button:before, .profile-menu .button-red:before, .profile-menu .button-facebook:before, .profile-menu
+  .button-google:before, .profile-menu .button-withBorder:before, .js-profileAddAddress:before, .question-submit:before, .question-contactInformationSubmitButton:before, .question-final-btn:before, .buttonAnimated-gold:after, .headerButton:after, .buttonTransparent-footer:after, .regularParagraph button.article-header-btn:after, .howItWork-button:after, .form-submitButton:after, .helpContact-button:after, .profile-menu .button:after, .profile-menu .button-red:after, .profile-menu .button-facebook:after, .profile-menu
+  .button-google:after, .profile-menu .button-withBorder:after, .js-profileAddAddress:after, .question-submit:after, .question-contactInformationSubmitButton:after, .question-final-btn:after {
     border-color: #c09e7a; }
-  .buttonAnimated-gold:hover, .headerButton:hover, .buttonTransparent-footer:hover, .buttonAnimated-gold:focus, .headerButton:focus, .buttonTransparent-footer:focus {
+  .buttonAnimated-gold:hover, .headerButton:hover, .buttonTransparent-footer:hover, .regularParagraph button.article-header-btn:hover, .howItWork-button:hover, .form-submitButton:hover, .helpContact-button:hover, .profile-menu .button:hover, .profile-menu .button-red:hover, .profile-menu .button-facebook:hover, .profile-menu
+  .button-google:hover, .profile-menu .button-withBorder:hover, .js-profileAddAddress:hover, .question-submit:hover, .question-contactInformationSubmitButton:hover, .question-final-btn:hover, .buttonAnimated-gold:focus, .headerButton:focus, .buttonTransparent-footer:focus, .regularParagraph button.article-header-btn:focus, .howItWork-button:focus, .form-submitButton:focus, .helpContact-button:focus, .profile-menu .button:focus, .profile-menu .button-red:focus, .profile-menu .button-facebook:focus, .profile-menu
+  .button-google:focus, .profile-menu .button-withBorder:focus, .js-profileAddAddress:focus, .question-submit:focus, .question-contactInformationSubmitButton:focus, .question-final-btn:focus {
     color: #000; }
 
 .buttonAnimated-black {
   background: #000; }
 
-.buttonTransparent, .alreadyMember-button, .helpContact-button {
+.buttonTransparent, .alreadyMember-button {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
@@ -8632,7 +8653,7 @@ button {
   color: #696969;
   display: inline-block;
   border: 1px solid #c09e7a; }
-  .buttonTransparent:hover, .alreadyMember-button:hover, .helpContact-button:hover {
+  .buttonTransparent:hover, .alreadyMember-button:hover {
     color: #696969; }
 
 .buttonLeftArrow, .form-previous, .form-previous2, .question-previous {
@@ -8800,7 +8821,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 130px;
   background: #242424;
   margin-bottom: 0;
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
@@ -8891,6 +8912,12 @@ button {
       border-top: 0;
       padding-left: 0;
       padding-right: 0; } }
+
+.navbar-supheader {
+  padding: 4px 0;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 300; }
 
 .navbar-nav {
   margin: 0;
@@ -9222,6 +9249,9 @@ button {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 );
   /* IE6-9 */ }
+
+.regularParagraph button.article-header-btn {
+  text-decoration: none; }
 
 .avatar-image {
   display: inline-block;
@@ -10447,10 +10477,10 @@ button {
 textarea.form-input, textarea.question-contactInformationFakeInput {
   height: 192px; }
 
-.form-submitButton, .question-contactInformationSubmitButton {
+.form-submitButton {
   display: block;
   width: 100%;
-  margin-top: 3px;
+  margin-top: 18px;
   position: relative;
   z-index: 1; }
 
@@ -10578,7 +10608,7 @@ textarea.form-input, textarea.question-contactInformationFakeInput {
 
 .helpContact-button {
   vertical-align: middle;
-  margin: 0 5px; }
+  margin: 0 16px; }
   @media (max-width: 991px) {
     .helpContact-button {
       margin-top: 2px;
@@ -10710,7 +10740,7 @@ textarea.form-input, textarea.question-contactInformationFakeInput {
   font-size: 14px;
   font-family: Helvetica,Arial,sans-serif; }
   #mc_embed_signup .button, #mc_embed_signup .button-red, #mc_embed_signup .button-facebook, #mc_embed_signup
-  .button-google, #mc_embed_signup .button-withBorder, #mc_embed_signup .form-submitButton, #mc_embed_signup .question-contactInformationSubmitButton, #mc_embed_signup .howItWork-button, #mc_embed_signup .question-submit {
+  .button-google, #mc_embed_signup .button-withBorder {
     background: #c09e7a;
     border-radius: 0;
     font-size: 16px;
