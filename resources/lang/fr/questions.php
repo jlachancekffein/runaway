@@ -274,7 +274,7 @@ return [
     'finalStepTitle' => 'Bienvenue :name&nbsp;!',
     'finalStepText' => '<p>Nous sommes très heureux de vous compter parmi les clientes du service de stylisme personnalisé Runway 2 Doorway.</p><p>Nous vous souhaitons la meilleure expérience magasinage qui soit&nbsp;! Faites votre première demande en cliquant ci-bas&nbsp;:</p>',
     'finalStepFounder' => 'Fondatrice',
-    'placeOrder' => 'Demande de look',
+    'placeOrder' => 'Faites votre demande',
     
     'previousStep' => 'Étape précédente',
     'save' => 'Enregistrer',
