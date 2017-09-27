@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'title' => 'Inspiration par Runway&nbsp;2&nbsp;Doorway',
-    'text' => 'Découvrez toutes nos idées de looks&nbsp;!',
+    'title' => 'Nos stylistes&nbsp;R2D vous présentent quelques looks mode de la saison pour vous inspirer.',
+    'text' => 'Lookbook Automne/Hiver 2017',
 ];
