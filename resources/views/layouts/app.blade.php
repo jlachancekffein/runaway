@@ -59,7 +59,7 @@
     <meta property="og:url" content="{{ env('APP_URL') }}">
     <meta property="og:image" content="{{ env('APP_URL') }}/images/logo-1024x1024.png">
 </head>
-<body id="app-layout" data-language="{{ App::getLocale() }}">
+<body id="app-layout" data-language="{{ App::getLocale() }}" @if(request()->route()->getName() == 'home') class="isHome" @endif>
     
     @include('partials.header')
     

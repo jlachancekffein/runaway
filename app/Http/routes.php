@@ -82,5 +82,5 @@ Route::get('/lookbook', 'ArticlesListController@lookbookIndex');
 Route::get('/blog/{slug}', 'ShowArticleController@show');
 Route::get('/lookbook/{slug}', 'ShowArticleController@show');
 Route::post('/contact', 'ContactController@sendMessage');
-Route::get('/', 'PagesController@home');
+Route::get('/', ['as'=>'home', 'uses'=>'PagesController@home']);
 Route::get('/{slug}', 'PagesController@slug');

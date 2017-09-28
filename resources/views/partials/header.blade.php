@@ -1,5 +1,8 @@
+
 <nav class="navbar navbar-white navbar-static-top">
-    <div class="navbar-supheader"><div class="layout-container">{{ trans('theme.supheader') }}</div></div>
+@if(request()->route()->getName() == 'home')    
+  <div class="navbar-supheader"><div class="layout-container">{{ trans('theme.supheader') }}</div></div>
+@endif
     <div class="layout-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
