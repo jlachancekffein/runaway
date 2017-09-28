@@ -7,7 +7,7 @@ elixir(function(mix) {
     mix.combine([
         "./node_modules/jquery/dist/jquery.min.js",
         "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
-        "./node_modules/select2/dist/js/select2.min.js",
+        "./node_modules/select2/dist/js/select2.full.min.js",
         "./node_modules/select2/dist/js/i18n/fr.js",
         "./node_modules/simplemde/dist/simplemde.min.js",
         "./node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",

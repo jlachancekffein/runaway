@@ -10659,8 +10659,7 @@ textarea.form-input, textarea.question-contactInformationFakeInput {
   margin-left: 0; }
 
 .kitRequest-intro {
-  font-size: 16px;
-  margin-bottom: 30px; }
+  font-size: 16px; }
 
 .profileAddress {
   display: inline-block;
@@ -10686,6 +10685,9 @@ textarea.form-input, textarea.question-contactInformationFakeInput {
 .profile-modifyAddressForm-visible {
   opacity: 1;
   height: auto; }
+
+.select2-container--default .select2-budget .select2-results > .select2-results__options {
+  max-height: inherit; }
 
 .client {
   margin-left: -10px;

@@ -98,10 +98,15 @@ $(function(){
     $(".js-select2").each(function(){
         var placeholder = "";
         var minimumResultsForSearch = $(this).attr('data-select2hidesearch') === 'true' ? Infinity : 0;
+        var dropdownCssClass = $(this).attr('data-select2class') ? $(this).attr('data-select2class') : null;
         if ($(this).attr("placeholder") !== undefined) {
             placeholder = $(this).attr("placeholder");
         }
-        $(this).select2({ placeholder: placeholder, minimumResultsForSearch: minimumResultsForSearch });
+        $(this).select2({ 
+          placeholder: placeholder, 
+          minimumResultsForSearch: minimumResultsForSearch,
+          dropdownCssClass: dropdownCssClass
+        });
     });
 
     $(".js-fileUpload").on("change", function(e){

@@ -53,7 +53,6 @@
 
 .kitRequest-intro {
     font-size: 16px;
-    margin-bottom: 30px;
 }
 
 .profileAddress {
@@ -87,4 +86,8 @@
 
 .js-profileAddAddress{
   @extend .buttonAnimated-gold;
+}
+
+.select2-container--default .select2-budget .select2-results > .select2-results__options{
+  max-height: inherit;
 }
