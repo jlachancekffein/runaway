@@ -133,7 +133,7 @@
         <h2 class="partners-title">{{ trans('home.partners') }}</h2><?php
         ?><p class="partners-text">{{ trans('home.partnersText') }}</p>
         <div class="partners-partnerList">
-          <a class="partners-partner" href="http://groupecheikha.com/fr/lentrepot" target="_blank" style="top: -5px;"><img height="41" src="/images/partner-Cheikha-entrepot.svg" alt="Cheïkha entrepot"></a>
+          <a class="partners-partner" href="http://groupecheikha.com/fr/lentrepot" target="_blank" style="top: -5px;"><img height="65" src="/images/partner-Cheikha-entrepot.svg" alt="Cheïkha entrepot"></a>
         </div>
     </div>
 </div>

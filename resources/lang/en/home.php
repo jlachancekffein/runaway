@@ -25,7 +25,7 @@ return [
     'getInspiredParagraph' => 'Browse our seasonal looks created from our distinguished collection of shirts, dresses, jeans, skirts, sweaters, pants, accessories and more&nbsp;! Women\'s fashion, one step from your door.',
     'getInspiredLink' => 'Discover all our lookbook',
     'brands' => 'Our brands',
-    'brandsText' => 'Our personal stylists work with many luxury brands so you can be assured that you will only be offered high quality garments. Marie-Chrystelle Cheikha and every R2D stylists work towards one goal: your complete satisfaction.',
+    'brandsText' => "We offers high end clothings for women mostly imported from Europe and the United States without forgetting a few brands from Canada. Nothing but the best from runway to doorway.",
     'partners' => 'Our Partner',
     'partnersText' => '',
     'completeYourProfile' => 'Complete your profile',
