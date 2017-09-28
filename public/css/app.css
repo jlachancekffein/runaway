@@ -11488,9 +11488,6 @@ textarea.form-input, textarea.question-contactInformationFakeInput {
   max-width: 75px;
   font-size: 13px;
   line-height: 16px; }
-  @media (min-width: 1200px) {
-    .question-favoritePatternsGroup {
-      width: 20%; } }
 
 .question-favoriteAccessoriesGroup {
   width: 25%;

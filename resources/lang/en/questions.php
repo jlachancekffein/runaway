@@ -207,6 +207,7 @@ return [
     'favoritePatterns-princeOfWales' => 'Prince of Wales',
     'favoritePatterns-handstooth' => 'Handstooth',
     'favoritePatterns-snake' => 'Snake',
+    'favoritePatterns-stripes' => 'Stripes',
     
     // Accessoires
     'favoriteAccessoriesTitle' => 'Select your favorites accessories',

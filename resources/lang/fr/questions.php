@@ -207,6 +207,7 @@ return [
     'favoritePatterns-princeOfWales' => 'Prince de Galles',
     'favoritePatterns-handstooth' => 'Pied-de-poule',
     'favoritePatterns-snake' => 'Serpent',
+    'favoritePatterns-stripes' => 'Rayure',
     
     // Accessoires
     'favoriteAccessoriesTitle' => 'Cochez les accessoires que vous aimez porter',

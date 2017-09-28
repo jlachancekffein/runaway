@@ -132,6 +132,7 @@ class Profile extends Model
         'princeOfWales',
         'handstooth',
         'snake',
+        'stripes'
     ];
     
     protected static $favoriteAccessories = [
