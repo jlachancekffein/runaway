@@ -13,7 +13,7 @@ return [
     'lookbook' => 'Lookbook',
     'newsletter' => 'Newsletter',
     'stylism' => '« À la carte » stylist',
-    'stylist' => 'Lead stylist',
+    'stylist' => 'Its founder',
     'logout' => 'Sign out',
     'howItWorks' => 'How it works',
     'faq' => 'FAQ',

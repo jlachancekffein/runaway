@@ -49,7 +49,7 @@
                 <li><a href="{{ url('/blog') }}">{{ trans('theme.blog') }}</a></li>
                 <li><a href="{{ url('/lookbook') }}">{{ trans('theme.lookbook') }}</a></li>
                 <li><a href="{{ url('/stylism') }}">{{ trans('theme.stylism') }}</a></li>
-                <li><a href="{{ url('/stylist') }}">{{ trans('theme.stylist') }}</a></li>
+                <li><a href="{{ url('/its-founder') }}">{{ trans('theme.stylist') }}</a></li>
                 <li><a href="{{ url('/contact') }}">{{ trans('theme.contactUs') }}</a></li>
 @if (!Auth::guest())
                 <li><a href="{{ url('/logout') }}"><span class="fa fa-sign-out"></span> {{ trans('theme.logout') }}</a></li>
