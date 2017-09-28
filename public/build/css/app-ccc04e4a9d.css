@@ -8917,7 +8917,8 @@ button {
   padding: 4px 0;
   background-color: white;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center; }
 
 .navbar-nav {
   margin: 0;
