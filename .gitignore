@@ -9,3 +9,5 @@ npm-debug.log*
 tags
 
 node_modules/
+
+!.env.exemple
