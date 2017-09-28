@@ -8,6 +8,4 @@ npm-debug.log*
 .idea*
 tags
 
-vendor/
 node_modules/
-storage/
