@@ -8,7 +8,7 @@ return [
     'headerText4' => '',
     'title1' => 'Répondez à notre court questionnaire.',
     'text1' => 'Complétez votre profil de style pour partager vos besoins et vos préférences.',
-    'title2' => "Approuvez le contenu de notre sélection, ajoutez ou supprimez des items, procédez au paiement et c'est en route jusqu'à votre porte. Un maximum de cinq items mode vous sera envoyé.",
+    'title2' => "Faites-nous part de vos besoins et découvrez votre sélection d’items choisis par votre styliste R2D sur votre profil.",
     'text2' => 'Approuvez le contenu du look demandé, ajoutez ou supprimez un article, et c\'est en route jusqu\'à votre porte. Un maximum de cinq morceaux par look vous sera envoyé.',
     'title3' => 'Essayez votre sélection et retournez sans frais ce qui ne vous convient pas',
     'text3' => 'Le remboursement des items sera rapide et simple dès leur réception. Veuillez noter qu’aucun frais de retour ne vous sera chargé.',
