@@ -158,15 +158,12 @@
 .buttonTransparent-footer {
     @extend .buttonAnimated-gold;
     
-    color: #fff;
+    //color: #fff;
     border-color: #6f6f6f;
     font-size: 18px;
     padding: 16px 74px;
     font-weight: 400;
-    
-    &:hover,
-    &:focus { color: #fff; }
-    
+        
     @media (max-width: $screen-sm-max) {
         display: inline-block;
         vertical-align: middle;
