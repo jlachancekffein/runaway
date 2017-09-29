@@ -28,7 +28,7 @@
             <div class="question-brandGroup">
                 <h3 class="question-brandTitle">{{ trans('questions.favoriteBrandsTitle') . trans('general.:') }}</h3><?php
                 
-                ?>@foreach ($fields['brands'] as $brand)<?php
+                ?>@foreach ($fields['brands'] as $brand=>$data)<?php
                 ?><div class="question-brandField">
                     <input class="question-checkbox" type="checkbox" name="preferences[brand][]" value="{{ $brand }}" id="brand_{{ $brand }}"
                         {{ array_key_exists('brand', $preferences) && in_array($brand, $preferences['brand']) ? ' checked="checked"' : '' }}
@@ -41,7 +41,10 @@
                         </div>
                         <img class="question-brandMannequinImage" src="/images/marqueMannequin-{{ $brand }}.jpg" alt="">
                     </button>
-                    <label class="question-brandLabel" for="brand_{{ $brand }}">{{ trans('questions.' . $brand) }}</label>
+                    <label class="question-brandLabel" for="brand_{{ $brand }}">
+                      {{ trans('questions.' . $brand) }}<br />
+                      <small>{{ trans('questions.size') }} {{ $data['size']['min'] }} {{ trans('questions.of') }} {{ $data['size']['max'] }}</small>
+                    </label>
                 </div><?php
                 ?>@endforeach
             </div>

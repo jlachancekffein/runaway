@@ -155,16 +155,14 @@ class Profile extends Model
     ];
     
     protected static $brands = [
-//        'marie-saint-pierre',
-        'margittes',
-        'marc-cain',
-        'laurel',
-        'luisa-cerano',
-        'betty-barclay',
-        'riani',
-        // 'georges-rech',
-        'rafaello-rossi',
-        'samoon',
+        'margittes' => ['size'=>['min'=>34, 'max'=>46]],
+        'marc-cain' => ['size'=>['min'=>34, 'max'=>46]],
+        'laurel' => ['size'=>['min'=>32, 'max'=>46]],
+        'luisa-cerano' => ['size'=>['min'=>34, 'max'=>46]],
+        'betty-barclay' => ['size'=>['min'=>36, 'max'=>48]],
+        'riani' => ['size'=>['min'=>34, 'max'=>48]],
+        'rafaello-rossi' => ['size'=>['min'=>34, 'max'=>46]],
+        'samoon' => ['size'=>['min'=>40, 'max'=>52]],
     ];
     
     public static function getStyles() {
