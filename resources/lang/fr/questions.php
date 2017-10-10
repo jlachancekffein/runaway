@@ -256,7 +256,7 @@ return [
     'georges-rech' => 'Georges Rech',
     'rafaello-rossi' => 'Rafaello Rossi',
     'samoon' => 'Samoon',
-    'size' => 'taille',
+    'size' => 'tailles',
     'of' => 'à',
     
     // Information de contact
