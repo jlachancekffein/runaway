@@ -130,8 +130,7 @@ class StoreQuestionRequest extends Request
     }
     
     private function question9Rules() {
-        $brands = Profile::getBrands();
-        
+        $brands = array_keys(Profile::getBrands());
         return [
             'preferences.brands.*' => 'in:' . implode(',', $brands)
         ];
