@@ -1,0 +1,45 @@
+.stylist-table{
+
+  margin: 80px 0;
+
+  .row{
+    margin-bottom: 56px;
+  }
+
+  .col{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+  }
+
+  .-icon{
+    width: 25%;
+    font-weight: bold;
+    text-align: center;
+    img{
+      max-width: 100%;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .-price{
+    width: 20%;
+    text-align: center;
+  }
+  .-content{width: 54%; text-align: center;}
+
+  @media (max-width: 780px) {
+    .-icon, .-price, .-content{
+      width: 100%;
+      display: block;
+    }
+    .-icon{
+      img{max-width: 50%}
+    }
+    .-content{
+      margin: 20px 0;
+    }
+  }
+
+}

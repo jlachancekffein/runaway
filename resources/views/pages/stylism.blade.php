@@ -9,27 +9,25 @@
 </div>
 
 <div class="layout-container">
-    <div class="layout-rightLessLarge">
+    <div class="layout-leftPadding">
         <p>{{ trans('stylism.intro') }}</p>
-        <p><strong>{{ trans('stylism.title1') }}</strong></p>
-        <p>{{ trans('stylism.text1') }}</p>
-        <p>{{ trans('stylism.list1Title') }}</p>
-        <ul>
-            <li>{{ trans('stylism.list1Element1') }}</li>
-            <li>{{ trans('stylism.list1Element2') }}</li>
-            <li>{{ trans('stylism.list1Element3') }}</li>
-            <li>{{ trans('stylism.list1Element4') }}</li>
-        </ul>
-        <p><strong>{{ trans('stylism.title2') }}</strong></p>
-        <p>{{ trans('stylism.text2') }}</p>
-        <p>{{ trans('stylism.list2Title') }}</p>
-        <ul>
-            <li>{{ trans('stylism.list2Element1') }}</li>
-            <li>{{ trans('stylism.list2Element2') }}</li>
-            <li>{{ trans('stylism.list2Element3') }}</li>
-            <li>{{ trans('stylism.list2Element4') }}</li>
-            <li>{{ trans('stylism.list2Element5') }}</li>
-        </ul>
+
+        <div class="stylist-table">
+          @foreach (['cleanup','limited','together','all_in','relooking','workplace'] as $service)
+            <div class="row">
+              <div class="col -icon">
+                <img src="/images/stylism_{{$service}}.jpg" />
+                {{ trans('stylism.'.$service.'.title') }}
+              </div>
+              <div class="col -content">{!! trans('stylism.'.$service.'.content') !!}</div>
+              <div class="col -price">{{ trans('stylism.'.$service.'.price') }}</div>
+            </div>
+          @endforeach
+        </div>
+
+
+
+       
         <p><strong>{{ trans('stylism.title3') }}</strong></p>
         <p>{{ trans('stylism.text3') }}</p>
         {!! trans('stylism.text4') !!}
