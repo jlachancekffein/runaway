@@ -72,6 +72,9 @@ function format_phone($number) {
 
 function resize($imagePath, $width, $height)
 {
+
+    return $imagePath;
+
     $storageImagePath = str_replace('/storage', 'app/public', $imagePath);
 
     if (!$imagePath || file_exists($imagePath)) {
