@@ -3,7 +3,6 @@
 @section('content')
 
 <div class="layout-noPaddingContainer">
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     <div class="leftMenu js-leftMenu">
         <p class="leftMenu-title">Archive</p>
 
