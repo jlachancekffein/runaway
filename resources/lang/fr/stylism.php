@@ -2,7 +2,7 @@
 
 return [
     'mainTitle' => 'Styliste à la carte',
-    'intro' => 'En plus de proposer un service de magasinage personnalisé en ligne, Runway 2 Doorway vous propose les services de leur styliste en personne&nbsp;! Découvrez nos deux forfaits ou encore mieux, créez le vôtre&nbsp;!',
+    'intro' => 'En plus de proposer un service de magasinage personnalisé en ligne, Runway 2 Doorway vous propose les services de leur styliste en personne&nbsp;! Découvrez nos forfaits ou encore mieux, créez le vôtre&nbsp;!',
     'title1' => 'Forfait grand ménage (2h, 195 $)',
     'text1' => 'Avant de vous lancer dans les grandes dépenses, un ménage de votre garde-robe s\'impose. Vous sous-estimez peut-être tout ce qui s\'y trouve et vous pourriez sauver gros sur vos achats.',
     'list1Title' => 'Le forfait Grand ménage comprend&nbsp;:',

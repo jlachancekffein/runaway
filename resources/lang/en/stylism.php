@@ -2,7 +2,7 @@
 
 return [
     'mainTitle' => '« À la carte » stylist',
-    'intro' => 'Not only are we offering you the best online experience in high-end personal stylist, we also offer our services in person! Choose one of our 2 plans or custom your own!',
+    'intro' => 'Not only are we offering you the best online experience in high-end personal stylist, we also offer our services in person! Choose one of our plans or custom your own!',
     'title1' => 'Wardrobe plan (2h, $195)',
     'text1' => 'Before throwing everything away, a wardrobe check up with one of our experts is a must. You might under estimate treasures hiding in your closet that could save you quit a bit on your next shopping purchases.',
     'list1Title' => 'This plan includes:',
