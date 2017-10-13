@@ -3,7 +3,7 @@
 @if(request()->route()->getName() == 'home')    
   <div class="navbar-supheader"><div class="layout-container">{{ trans('theme.supheader') }}</div></div>
 @endif
-    <div class="layout-container">
+    <div class="layout-container navbar-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                 <span class="sr-only">{{ trans('theme.burgerToggle') }}</span>
