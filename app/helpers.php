@@ -99,7 +99,10 @@ function resize($imagePath, $width, $height)
 
 
 function crop($imagePath, $width, $height)
-{
+{   
+
+    return $imagePath;
+
     $storageImagePath = str_replace('/storage', 'app/public', $imagePath);
 
     if (!$imagePath || !file_exists(storage_path($storageImagePath))) {
