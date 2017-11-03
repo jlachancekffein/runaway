@@ -1,5 +1,6 @@
 
 $(function(){
+
     updateScrollTopOffset();
     // updateLogoSize();
 
@@ -248,6 +249,15 @@ $(function(){
             $(this).removeClass("openableKit-opened");
         }
     });
+
+
+    $("#modal-login input").on("focus", function(){
+      setTimeout( function(){
+        $(window).scrollTop(0);
+      }, 250)
+    })
+
+
 });
 
 
