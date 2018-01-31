@@ -34,9 +34,9 @@ class FacebookAuthController extends Controller
         }
 
         if( !$user->email ){
-            $user->email = 'undefined@facebooklogin.com';
-        }
-            
+            $user->email = "$user->id@facebooklogin.com";
+        }        
+
         $authUser = $this->findOrCreateUser($user);
 
         Auth::login($authUser, true);
