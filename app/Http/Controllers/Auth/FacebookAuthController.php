@@ -33,6 +33,10 @@ class FacebookAuthController extends Controller
             return redirect()->route('facebookLogin');
         }
 
+        if( !$user->email ){
+            $user->email = 'undefined@facebooklogin.com';
+        }
+            
         $authUser = $this->findOrCreateUser($user);
 
         Auth::login($authUser, true);
