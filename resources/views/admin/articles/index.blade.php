@@ -16,10 +16,10 @@
             <div class="article">
                 @foreach ($articles as $article)
                     @if ($article->image)
-                    <a class="article-thumbnail" href="/admin/articles/{{ $section }}/{{ $article->id }}" style="width: 300px; height: 300px;">
+                    <a class="article-thumbnail" href="/admin/articles/{{ $section }}/{{ $article->id }}" style="width: 300px; height: 300px;overflow:hidden; ">
                         <h3 class="article-title">{{ $article->title }}</h3>
                         @if (in_array(strtolower(substr($article->image, -3)), ['jpg', 'peg', 'png', 'gif']))
-				<img src="{{ crop($article->image, 300, 300) }}" class="article-image">
+				<img src="{{ crop($article->image, 300, 300) }}" class="article-image" style="max-width:100%; height: auto;">
 			@endif
                     </a>
                     @else

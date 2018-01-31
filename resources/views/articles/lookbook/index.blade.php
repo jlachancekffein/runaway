@@ -21,7 +21,6 @@
 
         <div class="listElementBlocks">
             @foreach($lookbooks as $look)
-                @if (file_exists(storage_path(str_replace('/storage', 'app/public', $look->image))))
                     <a class="listElementBlock" href="{{ url('/lookbook/' . $look->seo_slug) }}" id="look-{{ $look->seo_slug }}">
                         @if(in_array(strtolower(substr($look->image, -3)), array('jpg', 'png', 'gif')))
                             <img class="listElement-image" src="{{ crop($look->image, 227, 227) }}" alt="{{ $look->title }}">
@@ -30,7 +29,7 @@
                         @endif
                         <h2 class="listElement-name">{{ $look->title }}</h2>
                     </a>
-                @endif
+               
             @endforeach
         </div>
     </div>
